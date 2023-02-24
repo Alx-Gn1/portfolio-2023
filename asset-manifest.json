@@ -1,13 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio-2023/static/css/main.6afc5757.css",
-    "main.js": "/portfolio-2023/static/js/main.36a578b2.js",
+    "main.js": "/portfolio-2023/static/js/main.160a640d.js",
+    "static/media/isometric-room.webp": "/portfolio-2023/static/media/isometric-room.b8467bffa58f9403542c.webp",
     "static/media/Anton-Regular.ttf": "/portfolio-2023/static/media/Anton-Regular.170b842f9a8cd6150a0d.ttf",
-    "static/media/isometric-room.webp": "/portfolio-2023/static/media/isometric-room.1d0d09911411e94df822.webp",
     "static/media/profile.jpg": "/portfolio-2023/static/media/profile.59090e2d88d316e63565.jpg",
     "static/media/e-mail.png": "/portfolio-2023/static/media/e-mail.89fd18f9989615d65735.png",
     "static/media/LinkedIn.png": "/portfolio-2023/static/media/LinkedIn.7d7a824c79fcf2471910.png",
-    "static/media/isometric-room-background.webp": "/portfolio-2023/static/media/isometric-room-background.455b6b2374aeb55b69f8.webp",
     "static/media/Jest.png": "/portfolio-2023/static/media/Jest.876b9ab00a1054be30bb.png",
     "static/media/NodeJS.png": "/portfolio-2023/static/media/NodeJS.b58016de7fe8d2b79b4d.png",
     "static/media/theme_light.webp": "/portfolio-2023/static/media/theme_light.82e5cebe581dee1a32eb.webp",
@@ -16,10 +15,10 @@
     "index.html": "/portfolio-2023/index.html",
     "static/media/Hamburger_icon.svg": "/portfolio-2023/static/media/Hamburger_icon.b778cb1777612594612f0bf2e4ff8477.svg",
     "main.6afc5757.css.map": "/portfolio-2023/static/css/main.6afc5757.css.map",
-    "main.36a578b2.js.map": "/portfolio-2023/static/js/main.36a578b2.js.map"
+    "main.160a640d.js.map": "/portfolio-2023/static/js/main.160a640d.js.map"
   },
   "entrypoints": [
     "static/css/main.6afc5757.css",
-    "static/js/main.36a578b2.js"
+    "static/js/main.160a640d.js"
   ]
 }
