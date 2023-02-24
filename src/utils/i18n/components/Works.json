@@ -1,0 +1,32 @@
+{
+  "en": {
+    "works": {
+      "title": "Works",
+      "findMyWorksOnGithub": "You can also see my works on ",
+      "workDescriptions": {
+        "portfolio": "My Developer Portfolio ! Created with React Redux TypeScript",
+        "booki": "OpenClassrooms's Project: I was assigned to create a static website using only html & css",
+        "sophieBluel": "OpenClassrooms's Project: I was sent a backend server (running on Express), my role was to develop the frontend part of the website, this project was made using javascript vanilla",
+        "ninaCarducci": "OpenClassrooms's Project: I was assigned a website, my role here was to optimize the app performance and SEO",
+        "kasa": "OpenClassrooms's Project: A ReactJS Single page application, a basic renting website with reusable components",
+        "monVieuxGrimoire": "OpenClassrooms's Project: A fullstack app in MERN stack, single page application where a user can share and add ratings to books, database is secured by an authentification system"
+      },
+      "workGithubLink": "See more..."
+    }
+  },
+  "fr": {
+    "works": {
+      "title": "Travaux",
+      "findMyWorksOnGithub": "Vous pouvez également retrouver mes projets sur ",
+      "workDescriptions": {
+        "portfolio": "Mon portfolio de développeur ! Réalisé avec React Redux TypeScript",
+        "booki": "Projet OpenClassrooms : Le but était de réaliser un site web statique simple, en html et css uniquement",
+        "sophieBluel": "Projet OpenClassrooms : On m'a envoyé une api (serveur backend Express), mon rôle était de développer le frontend du site, projet en javascript vanilla",
+        "ninaCarducci": "Projet OpenClassrooms : On m'a envoyé un site web, mon rôle était d'optimiser les performances ainsi que le SEO du site",
+        "kasa": "Projet OpenClassrooms : Single page application développée en React, un site de location immobilière basique avec des composants réutilisables",
+        "monVieuxGrimoire": "Projet OpenClassrooms : Un projet fullStack MERN, un site où les utilisateurs peuvent partager et noter des livres, avec une base donnée sécurisée par un système d'authentification"
+      },
+      "workGithubLink": "Voir plus..."
+    }
+  }
+}

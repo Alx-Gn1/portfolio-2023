@@ -1,0 +1,46 @@
+{
+  "en": {
+    "skills": {
+      "title": "Skills",
+      "skillsfromOpenClassroom": "Skills acquired through OpenClassrooms parcour:",
+      "skillListOC": {
+        "0": "Choose a technical solution adapted to your client and work in Agile mode",
+        "1": "Configure an automated information monitoring system, acquire information manually through competitive intelligence",
+        "2": "Create a website with HTML and CSS",
+        "3": "Create dynamic web applications with Javascript and React",
+        "4": "Communicate with the back-end of an application using an API",
+        "5": "Create a back-end server with a REST API and a database secured by Authentification with Node-JS, ExpressJS and MongoDB",
+        "6": "Implement unit and integration tests and debug code",
+        "7": "Optimise a website performance, SEO, and accessibility"
+      },
+      "skillsSelfTaught": "Self-taught skills:",
+      "skillList": {
+        "0": "Create a website model with Figma",
+        "1": "Add multi langage support to a website",
+        "2": "Create dynamic web application using TypeScript"
+      }
+    }
+  },
+  "fr": {
+    "skills": {
+      "title": "Compétences",
+      "skillsfromOpenClassroom": "Compétences acquises durant ma formation OpenClassrooms :",
+      "skillListOC": {
+        "0": "Choisir une solution technique adaptée à un client et développer en Agile",
+        "1": "Configurer un système de veille informationnelle automatisé, rechercher des informations dans le cadre d'une veille concurencielle",
+        "2": "Créer un site web avec HTML et CSS",
+        "3": "Créer des sites web dynamiques avec Javascript et React",
+        "4": "Communiquer avec le backend d'une application utilisant une API",
+        "5": "Créer un serveur backend et une api REST, ainsi qu'une base de donnée sécurisé par un système d'authentification. Le tout avec React, NodeJS, Express & MongoDB",
+        "6": "Implémenter des test unitaires et des test d'intégration, débugger du code",
+        "7": "Optimiser les performances, le référencement et l'accessibilité d'un site web"
+      },
+      "skillsSelfTaught": "Compétences acquises en auto-didacte :",
+      "skillList": {
+        "0": "Créer une maquette de site web à l'aide de Figma",
+        "1": "Ajouter le support de plusieurs langues sur un site web",
+        "2": "Créer des sites web dynamiques avec TypeScript"
+      }
+    }
+  }
+}

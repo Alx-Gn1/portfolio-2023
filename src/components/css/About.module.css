@@ -1,0 +1,83 @@
+.mainContainer {
+  scroll-margin-top: 420px;
+  margin-top: 64px;
+  background-color: var(--primary-dark);
+  border-radius: 16px;
+  border: 2px solid var(--primary-darker);
+  padding: 32px 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contentContainer {
+  width: 62%;
+  border-radius: 16px;
+}
+.pictureOfMe {
+  width: 240px;
+  height: 240px;
+  border-radius: 16px;
+}
+.contentContainer h2 {
+  margin-bottom: 32px;
+}
+.contentContainer p {
+  text-align: justify;
+  margin-top: 8px;
+  font-size: 1.3em;
+}
+.contentContainer strong {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.tabletPicture {
+  display: none;
+}
+
+@media screen and (width <= 600px) {
+  .mainContainer {
+    scroll-margin-top: 16px;
+    flex-direction: column-reverse;
+    padding: 24px 32px;
+  }
+  .pictureOfMe {
+    margin-bottom: 32px;
+  }
+  .contentContainer {
+    width: 100%;
+    border-radius: 16px;
+  }
+  .contentContainer p {
+    font-size: 1em;
+  }
+  .contentContainer strong {
+    font-size: 1.1em;
+  }
+}
+@media screen and (600px <= width < 1024px) {
+  .mainContainer {
+    padding: 24px 48px;
+  }
+  .pictureOfMe {
+    display: none;
+  }
+  .contentContainer {
+    width: 100%;
+  }
+  .tabletPicture {
+    float: right;
+    composes: pictureOfMe;
+    display: unset;
+    margin: auto auto 24px 24px;
+  }
+}
+@media screen and (600px <= width <= 1024px) {
+  .mainContainer {
+    scroll-margin-top: 230px;
+  }
+}
+@media screen and (1024px <= width <= 1650px) {
+  .mainContainer {
+    scroll-margin-top: 340px;
+  }
+}

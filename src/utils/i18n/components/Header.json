@@ -1,0 +1,6 @@
+{
+  "en": { "header": { "aboutMe": "About Me", "skills": "Skills", "works": "Works", "contact": "Contact" } },
+  "fr": {
+    "header": { "aboutMe": "À propos", "skills": "Compétences", "works": "Travaux", "contact": "Contact" }
+  }
+}

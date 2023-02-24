@@ -1,0 +1,38 @@
+.skillContainer {
+  --text-size: 20%;
+  --img-size: 32px;
+  --gap: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+}
+.skillContainer p {
+  text-align: right;
+  font-size: 1.3em;
+  width: var(--text-size);
+}
+.skillContainer img {
+  width: var(--img-size);
+  height: var(--img-size);
+  object-fit: contain;
+}
+.scoreContainer {
+  height: 12px;
+  width: calc(100% - var(--gap) * 2 - var(--text-size) - var(--img-size));
+}
+.scoreBar {
+  height: 100%;
+  background-color: var(--secondary);
+}
+@media screen and (width <= 600px) {
+  .skillContainer img {
+    display: none;
+  }
+  .skillContainer {
+    justify-content: space-between;
+  }
+  .skillContainer p {
+    flex: 1;
+  }
+}

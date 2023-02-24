@@ -1,0 +1,14 @@
+{
+  "en": {
+    "introSection": {
+      "profession": "WEB DEVELOPER",
+      "interactiveDrawingDescription": "Click on illustration's interactive elements to learn a bit more about myself"
+    }
+  },
+  "fr": {
+    "introSection": {
+      "profession": "DÉVELOPPEUR WEB",
+      "interactiveDrawingDescription": "Cliquez sur les éléments interactifs du dessin pour en apprendre un peu plus sur moi"
+    }
+  }
+}

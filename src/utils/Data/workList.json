@@ -1,0 +1,50 @@
+[
+  {
+    "date": "02/2023",
+    "technologies": ["react", "typescript", "redux"],
+    "title": "Portfolio",
+    "description": "works.workDescriptions.portfolio",
+    "picture": "https://iili.io/HGUPRTJ.png",
+    "githubLink": "https://github.com/Alx-Gn1/mon-vieux-grimoire"
+  },
+  {
+    "date": "02/2023",
+    "technologies": ["mongoDB", "express", "react", "nodeJS"],
+    "title": "Mon Vieux Grimoire",
+    "description": "works.workDescriptions.monVieuxGrimoire",
+    "picture": "https://iili.io/HGUPRTJ.png",
+    "githubLink": "https://github.com/Alx-Gn1/mon-vieux-grimoire"
+  },
+  {
+    "date": "02/2023",
+    "technologies": ["react", "jest"],
+    "title": "Kasa",
+    "description": "works.workDescriptions.kasa",
+    "picture": "https://iili.io/HGUPaBp.png",
+    "githubLink": "https://github.com/Alx-Gn1/kasa-location-immobiliere"
+  },
+  {
+    "date": "01/2023",
+    "technologies": ["javascript", "html", "css"],
+    "title": "Debug Nina Carducci",
+    "description": "works.workDescriptions.ninaCarducci",
+    "picture": "https://iili.io/HGUP7QR.png",
+    "githubLink": "https://github.com/Alx-Gn1/Nina-Carducci"
+  },
+  {
+    "date": "12/2022",
+    "technologies": ["javascript", "html", "css"],
+    "title": "Portfolio Sophie Bluel",
+    "description": "works.workDescriptions.sophieBluel",
+    "picture": "https://iili.io/HGUPcEN.png",
+    "githubLink": "https://github.com/Alx-Gn1/PortfolioArchitecteInterieur"
+  },
+  {
+    "date": "12/2022",
+    "technologies": ["html", "css"],
+    "title": "Booki",
+    "description": "works.workDescriptions.booki",
+    "picture": "https://iili.io/HGUP5hv.png",
+    "githubLink": "https://github.com/Alx-Gn1/Booki"
+  }
+]

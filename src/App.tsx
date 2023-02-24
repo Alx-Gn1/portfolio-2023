@@ -1,57 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import Header from "./components/Header";
+import { useState } from "react";
+import setAppTheme from "./utils/functions/setAppTheme";
+import About from "./components/About";
+import IntroSection from "./components/IntroSection";
+import { ParallaxProvider } from "react-scroll-parallax";
+import Skills from "./components/Skills";
+import Works from "./components/Works";
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
+import { useAppDispatch } from "./app/hooks";
+import { setupMediaListeners } from "./utils/functions/listenDeviceType";
+import { setDesktop, setMobile, setTablet } from "./app/Slices/userDeviceSlice";
 
 function App() {
+  const [theme, setTheme] = useState("light");
+  const dispatch = useAppDispatch();
+  setupMediaListeners(dispatch, { setDesktop, setMobile, setTablet });
+
+  setAppTheme(theme);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
+    <ParallaxProvider>
+      <div className="App">
+        <Header theme={theme} setTheme={setTheme} />
+        <IntroSection />
+        <About />
+        <Skills />
+        <Works />
+        <Contact />
+        <Footer />
+      </div>
+    </ParallaxProvider>
   );
 }
 

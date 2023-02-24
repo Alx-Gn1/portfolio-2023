@@ -1,0 +1,126 @@
+.mainContainer {
+  margin: 512px 0;
+  background-color: var(--primary-dark);
+  border-radius: 16px;
+  border: 2px solid var(--primary-darker);
+  padding: 32px 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.titleContainer {
+  width: 20%;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.titleContainer > p {
+  position: relative;
+  bottom: 160px;
+}
+.worksContainer {
+  position: relative;
+  right: 0;
+  height: 720px;
+  margin: -96px 0 -120px 0;
+  width: 1300px;
+  overflow: hidden;
+}
+.slider {
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  left: 0;
+  height: 100%;
+  display: flex;
+}
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.buttonContainer button {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  color: var(--text-invert);
+  font-size: 2em;
+  text-align: center;
+  vertical-align: middle;
+  padding-bottom: 6px;
+  background-color: var(--primary-invert);
+}
+.buttonContainer button:first-child {
+  padding-right: 10px;
+}
+
+@media screen and (width <= 600px) {
+  .mainContainer {
+    margin-bottom: 328px;
+    padding: 32px 16px;
+    scroll-margin-top: 168px;
+  }
+  .titleContainer {
+    height: 123%;
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    align-items: center;
+  }
+  .titleContainer > p {
+    bottom: 354px;
+  }
+  .worksContainer {
+    width: 320px;
+    margin: -48px auto -48px auto;
+  }
+}
+@media screen and (600px <= width < 1024px) {
+  .mainContainer {
+    margin-bottom: 256px;
+    padding: 16px 32px;
+  }
+  .titleContainer {
+    flex: 1;
+  }
+  .worksContainer {
+    width: 400px;
+    margin: -48px auto -48px auto;
+  }
+}
+@media screen and (1024px <= width < 1200px) {
+  .mainContainer {
+    padding: 16px 36px;
+  }
+  .titleContainer {
+    flex: 1;
+  }
+  .worksContainer {
+    width: 648px;
+    margin: -48px auto -48px auto;
+  }
+}
+@media screen and (1200px <= width < 1400px) {
+  .worksContainer {
+    width: 740px;
+  }
+}
+@media screen and (1400px <= width < 1650px) {
+  .mainContainer {
+    padding: 16px 48px;
+  }
+  .worksContainer {
+    width: 940px;
+  }
+}
+@media screen and (1650px <= width <= 1880px) {
+  .mainContainer {
+    padding: 16px 56px;
+  }
+  .worksContainer {
+    width: 1150px;
+  }
+}

@@ -1,0 +1,157 @@
+.variables {
+  --date-height: 24px;
+  --viewer-width: 1300px;
+}
+.mainContainer {
+  --borders: 8px;
+  --margin: 8px;
+  margin-right: var(--margin);
+  composes: variables;
+  width: calc(var(--viewer-width) / 3 - var(--borders) * 2 - var(--margin));
+  height: 90%;
+  position: relative;
+  padding-top: var(--date-height);
+  border: var(--borders) solid transparent;
+  transition: all 0.5s ease-in-out;
+  border-radius: 32px;
+}
+.content,
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.date {
+  transition: all 0.5s ease-out;
+  composes: variables;
+  position: absolute;
+  top: 54px;
+  height: 0;
+  background-color: var(--primary-dark);
+  border: 2px solid var(--primary-darker);
+  border-radius: 16px 16px 0 0;
+  border-bottom: unset;
+  width: 33%;
+  text-align: center;
+  color: transparent;
+}
+.content {
+  margin-top: 24px;
+}
+.technologies {
+  margin: 32px 0;
+  display: flex;
+}
+.technologies img {
+  margin: 0 8px;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+.projectImage {
+  margin-bottom: 32px;
+  width: 160px;
+}
+.description {
+  width: 70%;
+  text-align: center;
+  margin-top: 16px;
+}
+.linkBackground {
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  background-color: var(--secondary);
+}
+.githubLink img {
+  transition: all 0.3s ease-out;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  margin-left: 24px;
+  margin-right: 48px;
+}
+.githubLink {
+  transition: all 0.4s ease-out;
+  position: absolute;
+  bottom: 20px;
+  border: 6px solid var(--primary);
+  border-radius: 16px;
+  background-color: var(--primary-invert);
+  width: 70%;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  font-size: 1.4em;
+  font-weight: 600;
+  color: var(--text-invert);
+}
+.githubLink:hover {
+  color: var(--text-invert);
+}
+.githubLink:hover:after {
+  transform: scale(0);
+}
+
+@media screen and (width <= 600px) {
+  .mainContainer {
+    width: 300px;
+    border: unset;
+    margin: 0 10px;
+  }
+  .date {
+    top: 48px;
+    border-bottom: 2px solid var(--primary-darker);
+    border-radius: 0 0 16px 16px;
+    border-top: unset;
+  }
+  .githubLink img {
+    margin-right: 24px;
+  }
+}
+@media screen and (600px <= width < 1024px) {
+  .mainContainer {
+    width: 380px;
+    border: unset;
+    margin: 0 10px;
+  }
+}
+@media screen and (1024px <= width < 1400px) {
+  .mainContainer {
+    --borders: 4px;
+    width: 300px;
+    margin: 0 8px;
+  }
+  .date {
+    top: 26px;
+  }
+}
+@media screen and (1200px <= width < 1400px) {
+  .mainContainer {
+    --borders: 6px;
+    width: 346px;
+    margin: 0 6px;
+  }
+  .date {
+    top: 56px;
+  }
+}
+@media screen and (1400px <= width <= 1650px) {
+  .mainContainer {
+    width: 281px;
+    margin: 0 8px;
+  }
+  .date {
+    top: 70px;
+  }
+}
+@media screen and (1650px <= width <= 1880px) {
+  .mainContainer {
+    width: 335px;
+    margin: 0 16px;
+  }
+  .date {
+    top: 71px;
+  }
+}

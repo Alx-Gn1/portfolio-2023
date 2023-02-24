@@ -1,0 +1,149 @@
+.variables {
+  --room-width: 45%;
+}
+.mainContainer {
+  composes: variables;
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.mainContainer article {
+  --padding: 15%;
+  text-align: right;
+  width: calc(100% - var(--room-width) - var(--padding));
+  padding-right: var(--padding);
+}
+.profession,
+.subtitle {
+  font-size: 1.4em;
+  font-weight: 600;
+  font-family: "Raleway";
+}
+.profession {
+  letter-spacing: 4px;
+  line-height: 4em;
+  color: var(--text-second);
+}
+.subtitle {
+  margin-top: 32px;
+  letter-spacing: 2px;
+  /* max-width: 600px; */
+}
+.roomVisualizer {
+  composes: variables;
+  width: var(--room-width);
+  aspect-ratio: 1 / 1;
+}
+.name {
+  color: var(--text-primary);
+  font-family: "Anton";
+  font-size: 8em;
+  line-height: 1em;
+  font-weight: 100;
+  letter-spacing: unset;
+}
+
+@media screen and (width <= 600px) {
+  .mainContainer {
+    padding-top: 48px;
+    flex-direction: column;
+  }
+  .mainContainer article {
+    text-align: center;
+    width: 100%;
+    padding-right: 0;
+  }
+  .subtitle {
+    font-size: 1em;
+    margin-bottom: 64px;
+    padding: 0 16px;
+  }
+  .roomVisualizer {
+    width: 95%;
+  }
+  .profession {
+    line-height: 2em;
+  }
+  .name {
+    font-family: "Anton";
+    font-size: 4em;
+    line-height: 1em;
+    margin-bottom: 48px;
+  }
+}
+@media screen and (600px <= width < 1650px) {
+  .mainContainer article {
+    --padding: 5%;
+  }
+}
+@media screen and (600px <= width < 1024px) {
+  .mainContainer {
+    flex-direction: column;
+  }
+  .mainContainer article {
+    text-align: center;
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 64px;
+  }
+  .profession,
+  .subtitle {
+    font-size: 1em;
+  }
+  .name {
+    font-size: 5em;
+  }
+}
+@media screen and (600px <= width <= 800px) {
+  .roomVisualizer {
+    width: 85%;
+  }
+}
+@media screen and (800px <= width <= 900px) {
+  .roomVisualizer {
+    width: 70%;
+  }
+}
+@media screen and (900px <= width <= 1024px) {
+  .roomVisualizer {
+    width: 60%;
+  }
+}
+@media screen and (1024px <= width < 1200px) {
+  .profession,
+  .subtitle {
+    font-size: 1.1em;
+  }
+  .name {
+    font-size: 5em;
+  }
+}
+@media screen and (1200px <= width < 1400px) {
+  .profession,
+  .subtitle {
+    font-size: 1.2em;
+  }
+  .name {
+    font-size: 6em;
+  }
+}
+@media screen and (1400px <= width < 1650px) {
+  .profession,
+  .subtitle {
+    font-size: 1.3em;
+  }
+  .name {
+    font-size: 7em;
+  }
+}
+@media screen and (1024px <= width <= 1200px) {
+  .variables {
+    --room-width: 58%;
+  }
+}
+@media screen and (1200px <= width <= 1400px) {
+  .variables {
+    --room-width: 50%;
+  }
+}

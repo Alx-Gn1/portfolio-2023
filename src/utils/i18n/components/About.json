@@ -1,0 +1,32 @@
+{
+  "en": {
+    "about": {
+      "title": "About me",
+      "introductionPart1": "Recently graduated from ",
+      "introductionPart2": "OpenClassrooms's Web Developer parcour",
+      "introductionPart3": ", specialized in MERN stack development.",
+      "story": "After I got my high school diploma, I went through a lot of small jobs before knowing what to do with my life. In 2022 I started learning Web development on my own, and then after one year I decided to do training courses to reinforce my knowledge. I wanted to provide my career a solid foundation to start.",
+      "imLookingFor": "As of today I'm searching for a Job as a Front-End developer to acquire more skills and more expertise",
+      "contactMePart1": "You can ",
+      "contactMePart2": "contact me",
+      "contactMePart3": ".",
+      "seeMyResume": "Or ",
+      "seeMyResumeLink": "read my resume"
+    }
+  },
+  "fr": {
+    "about": {
+      "title": "À propos",
+      "introductionPart1": "Récemment diplômé de la formation ",
+      "introductionPart2": "OpenClassrooms développeur Web",
+      "introductionPart3": ", spécialisé dans le développement en stack MERN",
+      "story": "Suite à l'obtention de mon baccalauréat en 2018 j'ai enchaîné différents postes dans des métiers divers et variés, j'ai entrepris d'apprendre le développement web en autodidacte en 2022. En fin d'année j'ai choisis de me rediriger vers une formation pour consolider mes connaissances et commencer ma carrière avec des fondations solides",
+      "imLookingFor": "Je souhaite aujourd'hui intégrer une équipe de développement Front-End pour gagner en compétences et en expérience",
+      "contactMePart1": "Vous pouvez ",
+      "contactMePart2": "me contacter",
+      "contactMePart3": ".",
+      "seeMyResume": "Ou bien ",
+      "seeMyResumeLink": "consulter mon CV"
+    }
+  }
+}
