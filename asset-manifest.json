@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-2023/static/css/main.3c7cbafe.css",
-    "main.js": "/portfolio-2023/static/js/main.34842edd.js",
+    "main.css": "/portfolio-2023/static/css/main.302d33bc.css",
+    "main.js": "/portfolio-2023/static/js/main.d8945bbc.js",
     "static/media/Anton-Regular.ttf": "/portfolio-2023/static/media/Anton-Regular.170b842f9a8cd6150a0d.ttf",
     "static/media/isometric-room.webp": "/portfolio-2023/static/media/isometric-room.1d0d09911411e94df822.webp",
     "static/media/profile.jpg": "/portfolio-2023/static/media/profile.59090e2d88d316e63565.jpg",
@@ -14,11 +14,11 @@
     "static/media/en_fr_flag.webp": "/portfolio-2023/static/media/en_fr_flag.c8ce003841731f3fdc49.webp",
     "index.html": "/portfolio-2023/index.html",
     "static/media/Hamburger_icon.svg": "/portfolio-2023/static/media/Hamburger_icon.b778cb1777612594612f0bf2e4ff8477.svg",
-    "main.3c7cbafe.css.map": "/portfolio-2023/static/css/main.3c7cbafe.css.map",
-    "main.34842edd.js.map": "/portfolio-2023/static/js/main.34842edd.js.map"
+    "main.302d33bc.css.map": "/portfolio-2023/static/css/main.302d33bc.css.map",
+    "main.d8945bbc.js.map": "/portfolio-2023/static/js/main.d8945bbc.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c7cbafe.css",
-    "static/js/main.34842edd.js"
+    "static/css/main.302d33bc.css",
+    "static/js/main.d8945bbc.js"
   ]
 }
