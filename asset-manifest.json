@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio-2023/static/css/main.6afc5757.css",
-    "main.js": "/portfolio-2023/static/js/main.160a640d.js",
-    "static/media/isometric-room.webp": "/portfolio-2023/static/media/isometric-room.b8467bffa58f9403542c.webp",
+    "main.js": "/portfolio-2023/static/js/main.85086cdc.js",
+    "static/media/isometric-room.webp": "/portfolio-2023/static/media/isometric-room.65c3d16cc73ba565c33b.webp",
     "static/media/Anton-Regular.ttf": "/portfolio-2023/static/media/Anton-Regular.170b842f9a8cd6150a0d.ttf",
     "static/media/profile.jpg": "/portfolio-2023/static/media/profile.59090e2d88d316e63565.jpg",
     "static/media/e-mail.png": "/portfolio-2023/static/media/e-mail.89fd18f9989615d65735.png",
@@ -15,10 +15,10 @@
     "index.html": "/portfolio-2023/index.html",
     "static/media/Hamburger_icon.svg": "/portfolio-2023/static/media/Hamburger_icon.b778cb1777612594612f0bf2e4ff8477.svg",
     "main.6afc5757.css.map": "/portfolio-2023/static/css/main.6afc5757.css.map",
-    "main.160a640d.js.map": "/portfolio-2023/static/js/main.160a640d.js.map"
+    "main.85086cdc.js.map": "/portfolio-2023/static/js/main.85086cdc.js.map"
   },
   "entrypoints": [
     "static/css/main.6afc5757.css",
-    "static/js/main.160a640d.js"
+    "static/js/main.85086cdc.js"
   ]
 }
