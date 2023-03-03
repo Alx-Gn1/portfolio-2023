@@ -85,6 +85,7 @@
     --link-spacing: 16px;
   }
   .headerContainer {
+    transition: all 0.25s ease-out;
     position: fixed;
     z-index: 99;
     --displacement: 4px;
@@ -94,6 +95,9 @@
     background-color: var(--primary-invert);
     border-radius: 0px 0px var(--border-radius) var(--border-radius);
     justify-content: flex-start;
+  }
+  .headerContainer.hidden {
+    top: -80px;
   }
   .nameContainer {
     background-color: unset;
@@ -108,7 +112,7 @@
   .navContainer {
     position: fixed;
     top: 0;
-    left: -90vw;
+    left: -91vw;
     width: 90vw;
     height: 100%;
     transition: all 0.3s;

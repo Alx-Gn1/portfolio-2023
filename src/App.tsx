@@ -1,5 +1,5 @@
-import Header from "./components/Header";
-import { useState } from "react";
+import Header from "./components/Header/Header";
+import { useEffect, useState } from "react";
 import setAppTheme from "./utils/functions/setAppTheme";
 import About from "./components/About";
 import IntroSection from "./components/IntroSection";
@@ -8,27 +8,28 @@ import Skills from "./components/Skills";
 import Works from "./components/Works";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
-import { useAppDispatch } from "./app/hooks";
+import { useAppDispatch, useAppSelector } from "./app/hooks";
 import { setupMediaListeners } from "./utils/functions/listenDeviceType";
 import { setDesktop, setMobile, setTablet } from "./app/Slices/userDeviceSlice";
+import { hideAddressBar } from "./utils/functions/hideAdressBar";
 
 function App() {
-  const [theme, setTheme] = useState("light");
   const dispatch = useAppDispatch();
   setupMediaListeners(dispatch, { setDesktop, setMobile, setTablet });
 
-  setAppTheme(theme);
+  useEffect(() => {
+    hideAddressBar();
+  }, []);
+
   return (
     <ParallaxProvider>
-      <div className="App">
-        <Header theme={theme} setTheme={setTheme} />
-        <IntroSection />
-        <About />
-        <Skills />
-        <Works />
-        <Contact />
-        <Footer />
-      </div>
+      <Header />
+      <IntroSection />
+      <About />
+      <Skills />
+      <Works />
+      <Contact />
+      <Footer />
     </ParallaxProvider>
   );
 }

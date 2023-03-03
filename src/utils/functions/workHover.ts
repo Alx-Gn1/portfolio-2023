@@ -17,11 +17,11 @@ export const setupHoverListener = (params: Param) => {
   const observer = new IntersectionObserver(
     (entries, observer) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting && index % 3 === 0) {
+        if (entry.isIntersecting && index === 0) {
           setIsHover(true);
           setTimeout(() => {
             setIsHover(false);
-          }, 3000);
+          }, 2000);
           observer.disconnect();
         } else {
           setIsHover(false);

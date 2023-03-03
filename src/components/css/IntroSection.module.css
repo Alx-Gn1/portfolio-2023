@@ -8,7 +8,7 @@
   justify-content: space-around;
   align-items: center;
 }
-.mainContainer article {
+.titleContainer {
   --padding: 15%;
   text-align: right;
   width: calc(100% - var(--room-width) - var(--padding));
@@ -49,7 +49,7 @@
     padding-top: 48px;
     flex-direction: column;
   }
-  .mainContainer article {
+  .titleContainer {
     text-align: center;
     width: 100%;
     padding-right: 0;
@@ -73,7 +73,7 @@
   }
 }
 @media screen and (600px <= width < 1650px) {
-  .mainContainer article {
+  .titleContainer {
     --padding: 5%;
   }
 }
@@ -81,7 +81,7 @@
   .mainContainer {
     flex-direction: column;
   }
-  .mainContainer article {
+  .titleContainer {
     text-align: center;
     width: 100%;
     padding-right: 0;

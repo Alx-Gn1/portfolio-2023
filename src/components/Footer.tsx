@@ -1,21 +1,18 @@
 import styles from "./css/Footer.module.css";
 import { useTranslation } from "react-i18next";
 import { useAppSelector } from "../app/hooks";
+import { linkScrollToPosition } from "../utils/functions/linkScrollToPosition";
 
 const Footer = () => {
   const { t } = useTranslation();
   const { userDevice, deviceWidth } = useAppSelector((state) => state.userDevice);
-  const linkScrollToPosition = (position: number) => {
-    setTimeout(() => {
-      window.scrollTo(0, position);
-    }, 1);
-  };
+
   return (
     <footer className={styles.footer}>
       <div
         className={styles.nameContainer}
         onClick={() => {
-          linkScrollToPosition(0);
+          linkScrollToPosition(0, userDevice, true);
         }}
       >
         <div className={styles.separator}></div>
@@ -27,9 +24,11 @@ const Footer = () => {
             className={styles.footerLink}
             href="#about"
             onClick={() => {
-              if (userDevice === "mobile") {
-                deviceWidth === 500 ? linkScrollToPosition(820) : linkScrollToPosition(740);
-              } else linkScrollToPosition(720);
+              if (deviceWidth === 500) {
+                linkScrollToPosition(980, userDevice);
+              } else if (deviceWidth === 400) {
+                linkScrollToPosition(880, userDevice);
+              } else linkScrollToPosition(840, userDevice, true);
             }}
           >
             {t("header.aboutMe")}
@@ -45,7 +44,9 @@ const Footer = () => {
             className={styles.footerLink}
             href="#works"
             onClick={() => {
-              userDevice === "mobile" ? linkScrollToPosition(3270) : linkScrollToPosition(2720);
+              if (userDevice === "mobile") {
+                linkScrollToPosition(3400, userDevice);
+              } else linkScrollToPosition(2300, userDevice, true);
             }}
           >
             {t("header.works")}

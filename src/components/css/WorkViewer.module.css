@@ -1,19 +1,33 @@
 .variables {
-  --date-height: 24px;
-  --viewer-width: 1300px;
-}
-.mainContainer {
+  --width: 400px;
+  --height: 650px;
+  --date-position-top: 9.6%;
+  --font-size: 1.2em;
   --borders: 8px;
   --margin: 8px;
+}
+.variables.mini {
+  --width: 300px;
+  --height: 440px;
+  --date-position-top: 24px;
+  --font-size: 1.2em;
+  --borders: 4px;
+  --margin: 8px;
+}
+.mainContainer {
   margin-right: var(--margin);
   composes: variables;
-  width: calc(var(--viewer-width) / 3 - var(--borders) * 2 - var(--margin));
-  height: 90%;
+  width: var(--width);
+  height: var(--height);
   position: relative;
-  padding-top: var(--date-height);
   border: var(--borders) solid transparent;
   transition: all 0.5s ease-in-out;
   border-radius: 32px;
+}
+.mainContainer.mini {
+  margin-right: 0;
+  padding-top: -32px;
+  background-color: var( --primary-dark);
 }
 .content,
 .mainContainer {
@@ -25,24 +39,39 @@
   transition: all 0.5s ease-out;
   composes: variables;
   position: absolute;
-  top: 54px;
-  height: 0;
+  top: var(--date-position-top);
+  height: 24px;
   background-color: var(--primary-dark);
   border: 2px solid var(--primary-darker);
   border-radius: 16px 16px 0 0;
   border-bottom: unset;
   width: 33%;
   text-align: center;
-  color: transparent;
+  font-size: calc(var(--font-size) * 0.8);
+}
+.date.mini {
+  border: unset;
+  position: relative;
+  top: 8px;
 }
 .content {
-  margin-top: 24px;
+  margin-top: calc(var(--date-position-top) + 32px);
+}
+.content.mini {
+  margin-top: -16px;
+}
+.content h3 {
+  font-size: var(--font-size);
 }
 .technologies {
   margin: 32px 0;
   display: flex;
 }
+.technologies.mini {
+  margin: 32px 0 16px 0;
+}
 .technologies img {
+  display: block;
   margin: 0 8px;
   width: 32px;
   height: 32px;
@@ -52,10 +81,17 @@
   margin-bottom: 32px;
   width: 160px;
 }
+.projectImage.mini {
+  width: 80px;
+}
 .description {
   width: 70%;
   text-align: center;
   margin-top: 16px;
+  font-size: calc(var(--font-size) * 0.75);
+}
+.description.mini {
+  width: 90%;
 }
 .linkBackground {
   position: absolute;
@@ -83,9 +119,19 @@
   height: 64px;
   display: flex;
   align-items: center;
-  font-size: 1.4em;
+  font-size: calc(var(--font-size) * 1.2);
+  padding-right: calc(var(--font-size) / 3);
   font-weight: 600;
   color: var(--text-invert);
+}
+.githubLink.mini {
+  height: 32px;
+  font-size: calc(var(--font-size) * 0.9);
+}
+.githubLink.mini img {
+  width: 24px;
+  height: 24px;
+  margin-left: 28px;
 }
 .githubLink:hover {
   color: var(--text-invert);
@@ -94,64 +140,111 @@
   transform: scale(0);
 }
 
-@media screen and (width <= 600px) {
-  .mainContainer {
-    width: 300px;
-    border: unset;
-    margin: 0 10px;
+@media screen and (width <= 1650px) {
+  .variables {
+    --font-size: 1em;
   }
-  .date {
-    top: 48px;
-    border-bottom: 2px solid var(--primary-darker);
-    border-radius: 0 0 16px 16px;
-    border-top: unset;
+  .description {
+    width: 90%;
+  }
+  .projectImage {
+    margin-bottom: 8px;
+  }
+}
+@media screen and (width <= 600px) {
+  .variables {
+    --width: 400px;
+    --height: 500px;
+    --date-position-top: 3%;
+    --font-size: 1.2em;
+  }
+  .variables.mini {
+    --width: 200px;
+    --height: 312px;
+  }
+  .description.mini {
+    display: none;
+  }
+  .githubLink.mini {
+    width: 90%;
+  }
+  .content {
+    margin-top: calc(var(--date-position-top) + 8px);
   }
   .githubLink img {
-    margin-right: 24px;
+    margin-right: 16px;
+  }
+  .projectImage {
+    width: 100px;
+    margin-bottom: 16px !important;
+  }
+}
+@media screen and (width <= 500px) {
+  .variables {
+    --width: 350px;
+    --height: 520px;
+    --date-position-top: 2.5%;
+    --font-size: 1.3em;
   }
 }
 @media screen and (600px <= width < 1024px) {
-  .mainContainer {
-    width: 380px;
-    border: unset;
-    margin: 0 10px;
+  .variables {
+    --width: 240px;
+    --height: 500px;
+    --date-position-top: 3%;
+  }
+  .variables.mini {
+    --width: 250px;
+    --height: 400px;
+  }
+  .content {
+    margin-top: calc(var(--date-position-top) + 8px);
+  }
+  .githubLink img {
+    margin-right: 16px;
+  }
+  .projectImage {
+    width: 100px;
+    margin-bottom: 16px !important;
   }
 }
 @media screen and (1024px <= width < 1400px) {
-  .mainContainer {
-    --borders: 4px;
-    width: 300px;
-    margin: 0 8px;
+  .variables {
+    --width: 300px;
+    --height: 580px;
+    --date-position-top: 10.5%;
   }
-  .date {
-    top: 26px;
+  .variables.mini {
+    --height: 410px;
   }
 }
 @media screen and (1200px <= width < 1400px) {
-  .mainContainer {
-    --borders: 6px;
-    width: 346px;
-    margin: 0 6px;
+  .variables {
+    --width: 400px;
+    --height: 580px;
+    --date-position-top: 10.5%;
   }
-  .date {
-    top: 56px;
+  .projectImage {
+    width: 140px;
   }
 }
+
 @media screen and (1400px <= width <= 1650px) {
-  .mainContainer {
-    width: 281px;
-    margin: 0 8px;
-  }
-  .date {
-    top: 70px;
+  .variables {
+    --width: 285px;
+    --height: 600px;
+    --date-position-top: 10.4%;
+
+    --borders: 8px;
+    --margin: 8px;
   }
 }
-@media screen and (1650px <= width <= 1880px) {
-  .mainContainer {
-    width: 335px;
-    margin: 0 16px;
-  }
-  .date {
-    top: 71px;
+@media screen and (1650px <= width <= 1900px) {
+  .variables {
+    --width: 350px;
+    --height: 650px;
+    --date-position-top: 9.5%;
+    --borders: 8px;
+    --margin: 8px;
   }
 }

@@ -1,0 +1,24 @@
+{
+  "en": {
+    "room": {
+      "learnMore": "Learn more...",
+      "contactTitle": "You can find me here:",
+      "aboutDescription": "Hi ! I'm Alexandre, recently graduated from OpenClassrooms Web Developer Parcour, specialized in MERN stack development",
+      "skillsDescription": "I started learning Javascript, HTML & CSS at the begining of 2022",
+      "skillsDescriptionP2": "Then I tried ReactJS and React Native during summer, finally I continued my learning journey by doing an online parcour : OpenClassrooms Web Developers Parcour",
+      "skillsDescriptionP3": "It gave me the occasion to re-learn and improve my javascript and React, I also worked on a backend project in MERN stack",
+      "workDescription": "My Last Works :"
+    }
+  },
+  "fr": {
+    "room": {
+      "learnMore": "En savoir plus...",
+      "contactTitle": "Vous pouvez me retrouver ici :",
+      "aboutDescription": "Bonjour ! Je me présente, Alexandre, récemment diplômé de la formation Développeur Web openclassrooms, spécialisé dans le développement en stack MERN",
+      "skillsDescription": "J'ai commencé par apprendre le Javascript, html & css début 2022.",
+      "skillsDescriptionP2": "J'ai ensuite travaillé sur ReactJS puis React Native durant l'été, pour finalement enchaîner sur une formation en novembre : la formation developpeur Web d'Openclassrooms",
+      "skillsDescriptionP3": "J'ai pu ré-apprendre et améliorer mon javascript et React, et eu l'occasion de travailler sur un projet backend en stack MERN",
+      "workDescription": "Mes derniers projets :"
+    }
+  }
+}

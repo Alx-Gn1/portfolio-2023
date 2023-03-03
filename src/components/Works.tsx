@@ -10,14 +10,13 @@ const Works = () => {
   const { t } = useTranslation();
   const { userDevice, parallaxMultiplier, deviceWidth } = useAppSelector((state) => state.userDevice);
 
-  const parallax = useParallax({ speed: parallaxMultiplier * -10 });
+  const parallax = useParallax({ speed: parallaxMultiplier * -20 });
 
   const [currentPage, setCurrentPage] = useState(1);
   const getMaxNumberOfPage = (): number => {
-    if (userDevice === "desktop" && (deviceWidth === 1024 || deviceWidth === 1200))
+    if (userDevice === "tablet" || (userDevice === "desktop" && (deviceWidth === 1024 || deviceWidth === 1200)))
       return Math.ceil(workList.length / 2);
     if (userDevice === "desktop") return Math.ceil(workList.length / 3);
-    // if (userDevice === "mobile" || userDevice === "tablet")
     return workList.length;
   };
   const maxNumberOfPage = getMaxNumberOfPage();
@@ -29,13 +28,15 @@ const Works = () => {
   return (
     <section id="works" className={styles.mainContainer} ref={parallax.ref}>
       <article className={styles.titleContainer}>
-        <h2>{t("works.title")}</h2>
-        <p>
-          {t("works.findMyWorksOnGithub")}
-          <a href="https://github.com/Alx-Gn1" target="_blank" rel="noreferrer noopener">
-            GitHub
-          </a>
-        </p>
+        <div>
+          <h2>{t("works.title")}</h2>
+          <p>
+            {t("works.findMyWorksOnGithub")}
+            <a href="https://github.com/Alx-Gn1" target="_blank" rel="noreferrer noopener">
+              GitHub
+            </a>
+          </p>
+        </div>
         <div className={styles.buttonContainer}>
           <button
             onClick={() => {
@@ -66,7 +67,6 @@ const Works = () => {
               picture={work.picture}
               githubLink={work.githubLink}
               index={index}
-              currentPage={currentPage}
             />
           ))}
         </div>

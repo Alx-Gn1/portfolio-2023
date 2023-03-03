@@ -95,27 +95,16 @@ video {
   --primary-invert: #fff;
   --primary-dark: #181e30;
   --primary-darker: #101627;
+  --dialog-background: var(--primary-darker);
   --secondary: #ffc55b;
-  --secondary-dark: #eeaf39;
-  --secondary-darker: #bd7d1c;
+  --secondary-dark: #e0a12c;
+  --secondary-darker: #2e4380;
   --text-primary: #ffefe8;
   --text-link: #ffe7bb;
   --text-second: #fe5944;
   --text-important: #ffce74;
   --text-invert: #101627;
 }
-
-/* :root {
-  --primary: #fe5944;
-  --primary-dark: #f04b38;
-  --primary-darker: #ee4935;
-  --secondary: #ffd256;
-  --secondary-dark: #ffd340;
-  --secondary-darker: #9e4911;
-  --text-primary: #f5f1ea;
-  --text-link: #fff;
-  --text-second: #fe5944;
-} */
 
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 @font-face {
@@ -139,8 +128,6 @@ html {
 body {
   max-width: 1920px;
   margin: auto;
-}
-.App {
   padding: 24px 48px;
 }
 section {
@@ -151,8 +138,6 @@ h2 {
   font-weight: 600;
   letter-spacing: 2px;
   color: var(--text-second);
-  /* text-shadow: -1px 0 var(--secondary-darker), 0 1px var(--secondary-darker), 1px 0 var(--secondary-darker),
-    0 -1px var(--secondary-darker); */
 }
 a {
   color: var(--text-link);
@@ -179,13 +164,16 @@ a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+button:hover {
+  cursor: pointer;
+}
 @media screen and (width <= 600px) {
-  .App {
+  body {
     padding: 0px;
   }
 }
 @media screen and (600px <= width < 1024px) {
-  .App {
+  body {
     padding: 12px 24px;
   }
 }

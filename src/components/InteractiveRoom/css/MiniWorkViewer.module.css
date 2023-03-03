@@ -1,0 +1,52 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.workContainer {
+  overflow: hidden;
+  position: relative;
+  width: 308px;
+  height: 440px;
+}
+.slider {
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  left: 0;
+  height: 100%;
+  display: flex;
+}
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.buttonContainer button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: var(--text-invert);
+  font-size: 1.3em;
+  text-align: center;
+  vertical-align: middle;
+  background-color: var(--primary-invert);
+}
+
+@media screen and (width <= 600px) {
+  .workContainer {
+    width: 208px;
+    height: 312px;
+  }
+}
+@media screen and (600px <= width <= 1024px) {
+  .workContainer {
+    width: 258px;
+    height: 400px;
+  }
+}
+@media screen and (1024px <= width < 1400px) {
+  .workContainer {
+    height: 420px;
+  }
+}

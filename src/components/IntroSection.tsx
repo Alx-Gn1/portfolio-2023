@@ -6,11 +6,11 @@ import { useAppSelector } from "../app/hooks";
 
 const IntroSection = () => {
   const { t } = useTranslation();
-  const {parallaxMultiplier} = useAppSelector((state) => state.userDevice);
+  const { parallaxMultiplier } = useAppSelector((state) => state.userDevice);
   const parallax = useParallax({ speed: parallaxMultiplier * -10 });
   return (
     <section id="introduction" className={styles.mainContainer} ref={parallax.ref}>
-      <article>
+      <article className={styles.titleContainer}>
         <h1 className={styles.profession}>{t("introSection.profession")}</h1>
         <h2 className={styles.name}>
           ALEXANDRE

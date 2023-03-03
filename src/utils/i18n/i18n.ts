@@ -6,6 +6,8 @@ import introSectionTraduction from "./components/IntroSection.json";
 import aboutMeTraduction from "./components/About.json";
 import skillsTraduction from "./components/Skills.json";
 import workTraduction from "./components/Works.json";
+import time from "./time.json";
+import interactiveRoomTrad from "./components/InteractiveRoom.json";
 
 i18n
   // detect user language
@@ -24,22 +26,26 @@ i18n
     resources: {
       en: {
         translation: {
+          ...time.en,
           ...headerTraduction.en,
           ...introSectionTraduction.en,
           ...aboutMeTraduction.en,
           ...skillsTraduction.en,
           ...workTraduction.en,
           contact: { title: "You can contact me here:" },
+          ...interactiveRoomTrad.en,
         },
       },
       fr: {
         translation: {
+          ...time.fr,
           ...headerTraduction.fr,
           ...introSectionTraduction.fr,
           ...aboutMeTraduction.fr,
           ...skillsTraduction.fr,
           ...workTraduction.fr,
           contact: { title: "Vous pouvez me contacter ici :" },
+          ...interactiveRoomTrad.fr,
         },
       },
     },

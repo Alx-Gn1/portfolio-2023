@@ -12,11 +12,11 @@ const Contact = () => {
         <h2>{t("contact.title")}</h2>
         <div className={styles.contactLinksContainer}>
           <a href="https://www.linkedin.com/in/alexandre-guenin-607a66265/" target="_blank" rel="noreferrer">
-            <img src={linkedinLogo} alt="linkedin logo" />
+            <img src={linkedinLogo} alt="linkedin logo" loading="lazy"/>
             LinkedIn
           </a>
           <a href="mailto:alexandre.guenin0@gmail.com" target="_blank" rel="noreferrer">
-            <img src={emailLogo} alt="email logo" />
+            <img src={emailLogo} alt="email logo" loading="lazy"/>
             Email
           </a>
         </div>

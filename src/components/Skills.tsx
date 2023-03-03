@@ -7,7 +7,7 @@ import { useAppSelector } from "../app/hooks";
 
 const Skills = () => {
   const { t } = useTranslation();
-  const {parallaxMultiplier} = useAppSelector((state) => state.userDevice);
+  const { parallaxMultiplier } = useAppSelector((state) => state.userDevice);
   const parallax = {
     fast: useParallax({ speed: parallaxMultiplier * 10 }),
     ultraFast: useParallax({ speed: parallaxMultiplier * 50 }),
@@ -35,15 +35,15 @@ const Skills = () => {
         </ul>
       </article>
       <article ref={parallax.ultraFast.ref} className={styles.skillsContainer}>
-        <SkillVisualizer skillName="React" logo={logos.react} score={100} />
-        <SkillVisualizer skillName="JavaScript" logo={logos.javascript} score={90} />
-        <SkillVisualizer skillName="HTML5" logo={logos.html} score={90} />
-        <SkillVisualizer skillName="CSS3" logo={logos.css} score={80} />
-        <SkillVisualizer skillName="TypeScript" logo={logos.typescript} score={50} />
-        <SkillVisualizer skillName="Express" logo={logos.express} score={30} />
-        <SkillVisualizer skillName="Jest" logo={logos.jest} score={25} />
-        <SkillVisualizer skillName="Figma" logo={logos.figma} score={15} />
-        <SkillVisualizer skillName="Redux" logo={logos.redux} score={15} />
+        <SkillVisualizer skillName="HTML5" logo={logos.html} score={100} experience={"1 " + t("year")} />
+        <SkillVisualizer skillName="CSS3" logo={logos.css} score={100} experience={"1 " + t("year")} />
+        <SkillVisualizer skillName="JavaScript" logo={logos.javascript} score={90} experience={"8 " + t("months")} />
+        <SkillVisualizer skillName="React" logo={logos.react} score={50} experience={"5 " + t("months")} />
+        <SkillVisualizer skillName="Express" logo={logos.express} score={15} experience={"3 " + t("weeks")} />
+        <SkillVisualizer skillName="TypeScript" logo={logos.typescript} score={9} experience={"2 " + t("weeks")} />
+        <SkillVisualizer skillName="Redux" logo={logos.redux} score={9} experience={"2 " + t("weeks")} />
+        <SkillVisualizer skillName="Jest" logo={logos.jest} score={9} experience={"2 " + t("weeks")} />
+        <SkillVisualizer skillName="Figma" logo={logos.figma} score={5.5} experience={"1 " + t("week")} />
       </article>
     </section>
   );

@@ -1,14 +1,43 @@
-import styles from "./InteractiveRoom.module.css";
-import { useTranslation } from "react-i18next";
+import styles from "./css/InteractiveRoom.module.css";
+import CharacterClicker from "./clickers/CharacterClicker";
+import SocialLinkClicker from "./clickers/SocialLinkClicker";
+import LibraryClicker from "./clickers/LibraryClicker";
+import WorksClicker from "./clickers/WorksClicker";
+import { useState } from "react";
+import DialogOpener from "./DialogOpener";
 import isometricRoom from "../../assets/isometric-room/isometric-room.webp";
-import isometricRoomBG from "../../assets/isometric-room/isometric-room-background.webp";
 
 const InteractiveRoom = () => {
-  const { t } = useTranslation();
+  const [currentDialog, setCurrentDialog] = useState<null | string>(null);
+
   return (
     <div className={styles.container}>
-      <img className={styles.imgBackground} src={isometricRoomBG} alt="isometric room background" />
-      <img src={isometricRoom} alt="isometric room" />
+      <img className={styles.roomImage} src={isometricRoom} alt="isometric room" loading="lazy" />
+      <div className={styles.clickersContainer}>
+        <CharacterClicker
+          onClick={() => {
+            setCurrentDialog("About");
+          }}
+        />
+        <SocialLinkClicker
+          onClick={() => {
+            setCurrentDialog("Contact");
+          }}
+        />
+        <LibraryClicker
+          onClick={() => {
+            setCurrentDialog("Skills");
+          }}
+        />
+        <WorksClicker
+          onClick={() => {
+            setCurrentDialog("Works");
+          }}
+        />
+      </div>
+      <div className={styles.dialogContainer}>
+        <DialogOpener currentDialog={currentDialog} setCurrentDialog={setCurrentDialog} />
+      </div>
     </div>
   );
 };
