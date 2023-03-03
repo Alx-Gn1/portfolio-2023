@@ -21,7 +21,7 @@
 .mainContainer {
   height: var(--height);
   composes: variables;
-  margin: 200px 0 128px 0;
+  margin: 340px 0 128px 0;
   border: 2px solid var(--primary-darker);
   display: flex;
   align-items: center;
