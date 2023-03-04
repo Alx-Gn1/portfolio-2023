@@ -8,6 +8,7 @@ const setAppTheme = (theme: string) => {
   if (theme === "dark") {
     themeStyle.innerHTML = `:root {
       --primary: #fff;
+      --primary-background: #ebedff;
       --primary-invert: #1a2036;
       --primary-dark: #ECEEFB;
       --primary-darker: #caceeb;

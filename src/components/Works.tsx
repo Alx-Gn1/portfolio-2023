@@ -1,6 +1,5 @@
 import styles from "./css/Works.module.css";
 import { useTranslation } from "react-i18next";
-import { useParallax } from "react-scroll-parallax";
 import WorkViewer from "./WorkViewer";
 import workList from "../utils/Data/workList.json";
 import { useEffect, useState } from "react";
@@ -8,9 +7,7 @@ import { useAppSelector } from "../app/hooks";
 
 const Works = () => {
   const { t } = useTranslation();
-  const { userDevice, parallaxMultiplier, deviceWidth } = useAppSelector((state) => state.userDevice);
-
-  const parallax = useParallax({ speed: parallaxMultiplier * -20 });
+  const { userDevice, deviceWidth } = useAppSelector((state) => state.userDevice);
 
   const [currentPage, setCurrentPage] = useState(1);
   const getMaxNumberOfPage = (): number => {
@@ -26,7 +23,7 @@ const Works = () => {
   }, [userDevice]);
 
   return (
-    <section id="works" className={styles.mainContainer} ref={parallax.ref}>
+    <section id="works" className={styles.mainContainer}>
       <article className={styles.titleContainer}>
         <div>
           <h2>{t("works.title")}</h2>

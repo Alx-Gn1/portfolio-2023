@@ -62,7 +62,15 @@
 .nameContainer:hover {
   cursor: pointer;
 }
-
+.footerBackground {
+  position: absolute;
+  height: 300px;
+  width: 100%;
+  left: 0;
+  /* border: 1px solid; */
+  background-image: linear-gradient(180deg, transparent 0%, var(--primary) 50%);
+  transform: translateY(-100%);
+}
 @media screen and (width <= 800px) {
   .footer {
     height: 200px;

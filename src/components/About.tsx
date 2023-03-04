@@ -1,17 +1,11 @@
 import styles from "./css/About.module.css";
 import { useTranslation } from "react-i18next";
 import photoOfMyself from "../assets/profile.jpg";
-import { useParallax } from "react-scroll-parallax";
-import { useAppSelector } from "../app/hooks";
 
 const About = () => {
   const { t } = useTranslation();
-  const { parallaxMultiplier } = useAppSelector((state) => state.userDevice);
-  const parallax = useParallax({ speed: parallaxMultiplier * 30 });
-  const parallaxBG = useParallax({ speed: parallaxMultiplier * -100 });
   return (
-    <>
-      <section id="about" className={styles.mainContainer} ref={parallax.ref}>
+      <section id="about" className={styles.mainContainer}>
         <article className={styles.contentContainer}>
           <img src={photoOfMyself} alt="Portrait Alexandre Guenin" className={styles.tabletPicture} loading="lazy" />
           <h2>{t("about.title")}</h2>
@@ -42,8 +36,6 @@ const About = () => {
         </article>
         <img src={photoOfMyself} alt="Portrait Alexandre Guenin" className={styles.pictureOfMe} loading="lazy" />
       </section>
-      <div className={styles.parallaxBG} ref={parallaxBG.ref as React.RefObject<HTMLDivElement>}></div>
-    </>
   );
 };
 export default About;

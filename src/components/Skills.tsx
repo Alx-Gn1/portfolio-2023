@@ -1,20 +1,13 @@
 import styles from "./css/Skills.module.css";
 import { useTranslation } from "react-i18next";
-import { useParallax } from "react-scroll-parallax";
 import SkillVisualizer from "./SkillVisualizer";
 import logos from "../utils/logos/logos";
-import { useAppSelector } from "../app/hooks";
 
 const Skills = () => {
   const { t } = useTranslation();
-  const { parallaxMultiplier } = useAppSelector((state) => state.userDevice);
-  const parallax = {
-    fast: useParallax({ speed: parallaxMultiplier * 10 }),
-    ultraFast: useParallax({ speed: parallaxMultiplier * 50 }),
-  };
   return (
     <section id="skills" className={styles.mainContainer}>
-      <article className={styles.description} ref={parallax.fast.ref}>
+      <article className={styles.description}>
         <h2>{t("skills.title")}</h2>
         <h3>{t("skills.skillsfromOpenClassroom")}</h3>
         <ul>
@@ -34,7 +27,7 @@ const Skills = () => {
           <li>{t("skills.skillList.2")}</li>
         </ul>
       </article>
-      <article ref={parallax.ultraFast.ref} className={styles.skillsContainer}>
+      <article className={styles.skillsContainer}>
         <SkillVisualizer skillName="HTML5" logo={logos.html} score={100} experience={"1 " + t("year")} />
         <SkillVisualizer skillName="CSS3" logo={logos.css} score={100} experience={"1 " + t("year")} />
         <SkillVisualizer skillName="JavaScript" logo={logos.javascript} score={90} experience={"8 " + t("months")} />

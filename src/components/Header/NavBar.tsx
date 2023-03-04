@@ -1,12 +1,9 @@
 import styles from "./css/Header.module.css";
 import { useTranslation } from "react-i18next";
-import { useAppSelector } from "../../app/hooks";
-import { linkScrollToPosition } from "../../utils/functions/linkScrollToPosition";
 
 const NavBar = (props: { closeDrawer: Function }) => {
   const { t } = useTranslation();
   const { closeDrawer } = props;
-  const { userDevice, deviceWidth } = useAppSelector((state) => state.userDevice);
 
   return (
     <div id="navDrawer" className={styles.navContainer}>
@@ -22,25 +19,10 @@ const NavBar = (props: { closeDrawer: Function }) => {
           closeDrawer();
         }}
       ></div>
-      <nav
-        className={styles.linkContainer}
-        onClick={() => {
-          setTimeout(closeDrawer, 300);
-        }}
-      >
+      <nav className={styles.linkContainer}>
         <p className={styles.drawerTitle}>Naviguer vers la section :</p>
         <li>
-          <a
-            className={styles.headerLink}
-            href="#about"
-            onClick={() => {
-              if (deviceWidth === 500) {
-                linkScrollToPosition(980, userDevice);
-              } else if (deviceWidth === 400) {
-                linkScrollToPosition(880, userDevice);
-              } else linkScrollToPosition(840, userDevice);
-            }}
-          >
+          <a className={styles.headerLink} href="#about">
             {t("header.aboutMe")}
           </a>
         </li>
@@ -50,13 +32,7 @@ const NavBar = (props: { closeDrawer: Function }) => {
           </a>
         </li>
         <li>
-          <a
-            className={styles.headerLink}
-            href="#works"
-            onClick={() => {
-              linkScrollToPosition(3400, userDevice);
-            }}
-          >
+          <a className={styles.headerLink} href="#works">
             {t("header.works")}
           </a>
         </li>
