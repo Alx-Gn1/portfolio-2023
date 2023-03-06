@@ -9,11 +9,12 @@ interface Props {
   description: string;
   picture: string;
   githubLink: string;
+  githubPageLink: string | undefined;
 }
 
 const MiniWorkDisplay = (props: Props) => {
   const { t } = useTranslation();
-  const { date, technologies, title, description, picture, githubLink } = props;
+  const { date, technologies, title, description, picture, githubLink, githubPageLink } = props;
 
   return (
     <article id={"mini-work-" + title} className={`${styles.mainContainer} ${styles.mini}`}>
@@ -27,7 +28,10 @@ const MiniWorkDisplay = (props: Props) => {
         <img
           src={picture}
           alt={title + " project"}
-          className={`${styles.projectImage} ${styles.mini}`}
+          className={`${styles.projectImage} ${styles.mini} ${githubPageLink ? styles.linkImage : null}`}
+          onClick={() => {
+            if (githubPageLink) window.open(githubPageLink);
+          }}
         />
         <h3>{title}</h3>
         <p className={`${styles.description} ${styles.mini}`}>{t(description)}</p>

@@ -13,11 +13,12 @@ interface Props {
   picture: string;
   githubLink: string;
   index: number;
+  githubPageLink: string | undefined;
 }
 
 const WorkViewer = (props: Props) => {
   const { t } = useTranslation();
-  const { date, technologies, title, description, picture, githubLink, index } = props;
+  const { date, technologies, title, description, picture, githubLink, index, githubPageLink } = props;
   const [isHover, setIsHover] = useState(false);
   const { userDevice } = useAppSelector((state) => state.userDevice);
 
@@ -44,10 +45,18 @@ const WorkViewer = (props: Props) => {
       <div className={styles.content}>
         <div className={styles.technologies}>
           {technologies.map((img: string) => (
-            <img src={logos[img]} alt={img + " logo"} key={img + " logo"} loading="lazy"/>
+            <img src={logos[img]} alt={img + " logo"} key={img + " logo"} loading="lazy" />
           ))}
         </div>
-        <img src={picture} alt={title + " project"} className={styles.projectImage} loading="lazy"/>
+        <img
+          src={picture}
+          alt={title + " project"}
+          className={`${styles.projectImage} ${githubPageLink ? styles.linkImage : null}`}
+          onClick={() => {
+            if (githubPageLink) window.open(githubPageLink);
+          }}
+          loading="lazy"
+        />
         <h3>{title}</h3>
         <p className={styles.description}>{t(description)}</p>
       </div>

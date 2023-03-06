@@ -5,7 +5,6 @@ import { store } from "./app/store";
 import App from "./App";
 import "./index.css";
 import "./utils/i18n/i18n";
-// import { ThemeProvider } from "./utils/context/ThemeContext";
 
 const container = document.getElementById("root")!;
 const root = createRoot(container);

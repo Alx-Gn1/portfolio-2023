@@ -23,6 +23,7 @@ const MiniWorkViewer = () => {
               description={work.description}
               picture={work.picture}
               githubLink={work.githubLink}
+              githubPageLink={work?.githubPageLink}
             />
           ))}
         </div>

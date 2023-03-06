@@ -64,6 +64,7 @@ const Works = () => {
               picture={work.picture}
               githubLink={work.githubLink}
               index={index}
+              githubPageLink={work?.githubPageLink}
             />
           ))}
         </div>

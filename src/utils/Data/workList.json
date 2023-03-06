@@ -5,6 +5,7 @@
     "title": "Portfolio",
     "description": "works.workDescriptions.portfolio",
     "picture": "https://iili.io/HGUPRTJ.png",
+    "githubPageLink": "",
     "githubLink": "https://github.com/Alx-Gn1/"
   },
   {
@@ -21,6 +22,7 @@
     "title": "Kasa",
     "description": "works.workDescriptions.kasa",
     "picture": "https://iili.io/HGUPaBp.png",
+    "githubPageLink": "https://alx-gn1.github.io/kasa-location-immobiliere",
     "githubLink": "https://github.com/Alx-Gn1/kasa-location-immobiliere"
   },
   {
@@ -29,6 +31,7 @@
     "title": "Debug Nina Carducci",
     "description": "works.workDescriptions.ninaCarducci",
     "picture": "https://iili.io/HGUP7QR.png",
+    "githubPageLink": "https://alx-gn1.github.io/Nina-Carducci/",
     "githubLink": "https://github.com/Alx-Gn1/Nina-Carducci"
   },
   {
@@ -45,6 +48,7 @@
     "title": "Booki",
     "description": "works.workDescriptions.booki",
     "picture": "https://iili.io/HGUP5hv.png",
+    "githubPageLink": "https://alx-gn1.github.io/Booki/",
     "githubLink": "https://github.com/Alx-Gn1/Booki"
   }
 ]
