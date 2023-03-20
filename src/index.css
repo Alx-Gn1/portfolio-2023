@@ -101,6 +101,8 @@ video {
   --secondary-dark: #e0a12c;
   --secondary-darker: #2e4380;
   --text-primary: #ffefe8;
+  --text-gray: #c5bebb;
+  --text-gray-dark: #969392;
   --text-link: #ffe7bb;
   --text-second: #fe5944;
   --text-important: #ffce74;
@@ -178,8 +180,9 @@ section {
   scroll-snap-align: start;
 }
 h2 {
-  font-size: 1.4em;
-  font-weight: 600;
+  font-family: "Anton";
+  font-size: 1.6em;
+  font-weight: 100;
   letter-spacing: 2px;
   color: var(--text-second);
 }
@@ -216,7 +219,7 @@ button:hover {
     padding: 0px;
   }
 }
-@media screen and (600px <= width < 1024px) {
+@media screen and (600px < width <= 1024px) {
   body {
     padding: 12px 24px;
   }

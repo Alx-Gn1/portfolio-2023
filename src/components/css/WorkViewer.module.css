@@ -190,7 +190,7 @@
     --font-size: 1.3em;
   }
 }
-@media screen and (600px <= width < 1024px) {
+@media screen and (600px < width <= 1024px) {
   .variables {
     --width: 240px;
     --height: 500px;
@@ -211,7 +211,7 @@
     margin-bottom: 16px !important;
   }
 }
-@media screen and (1024px <= width < 1400px) {
+@media screen and (1024px < width <= 1400px) {
   .variables {
     --width: 300px;
     --height: 580px;
@@ -221,7 +221,7 @@
     --height: 410px;
   }
 }
-@media screen and (1200px <= width < 1400px) {
+@media screen and (1200px < width <= 1400px) {
   .variables {
     --width: 400px;
     --height: 580px;
@@ -232,7 +232,7 @@
   }
 }
 
-@media screen and (1400px <= width <= 1650px) {
+@media screen and (1400px < width <= 1650px) {
   .variables {
     --width: 285px;
     --height: 600px;
@@ -242,7 +242,7 @@
     --margin: 8px;
   }
 }
-@media screen and (1650px <= width <= 1900px) {
+@media screen and (1650px < width <= 1900px) {
   .variables {
     --width: 350px;
     --height: 650px;

@@ -89,7 +89,7 @@
     top: 92px;
   }
 }
-@media screen and (800px <= width < 1024px) {
+@media screen and (800px < width <= 1024px) {
   .separator {
     height: 800%;
     top: 92px;

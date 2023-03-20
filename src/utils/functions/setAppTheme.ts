@@ -17,6 +17,8 @@ const setAppTheme = (theme: string) => {
       --secondary-dark: #e4442f;
       --secondary-darker: #d13a26;
       --text-primary: #111420;
+      --text-gray: #969392;
+      --text-gray-dark: #c5bebb;
       --text-link: #12225a;
       --text-second: #263363;
       --text-important: #e4442f;

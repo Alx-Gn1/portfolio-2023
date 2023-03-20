@@ -3,7 +3,7 @@ import CharacterClicker from "./clickers/CharacterClicker";
 import SocialLinkClicker from "./clickers/SocialLinkClicker";
 import LibraryClicker from "./clickers/LibraryClicker";
 import WorksClicker from "./clickers/WorksClicker";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import DialogOpener from "./DialogOpener";
 import isometricRoom from "../../assets/isometric-room/isometric-room.webp";
 import isometricRoomMobile from "../../assets/isometric-room/isometric-room-small.webp";
@@ -14,6 +14,15 @@ import { useAppSelector } from "../../app/hooks";
 const InteractiveRoom = () => {
   const [currentDialog, setCurrentDialog] = useState<null | string>(null);
   const { userDevice } = useAppSelector((state) => state.userDevice);
+
+  useEffect(() => {
+    const closeWhenScrollDown = () => {
+      if (window.scrollY > 600) setCurrentDialog(null);
+    };
+    window.addEventListener("scroll", closeWhenScrollDown, true);
+
+    return window.removeEventListener("scroll", closeWhenScrollDown, true)
+  }, []);
 
   return (
     <div className={styles.container}>

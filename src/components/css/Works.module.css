@@ -27,7 +27,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  border-radius: 16px;
+  border-radius: 8px;
   background-color: var(--primary-dark);
 }
 .titleContainer {
@@ -123,7 +123,7 @@
     --work-viewer-width: 350px;
   }
 }
-@media screen and (600px <= width < 1024px) {
+@media screen and (600px < width <= 1024px) {
   .variables {
     --height: 400px;
     --work-viewer-borders: 7.5px;
@@ -134,18 +134,18 @@
     );
   }
 }
-@media screen and (1024px <= width < 1200px) {
+@media screen and (1024px < width <= 1200px) {
   .variables {
     --work-viewer-width: 300px;
     --work-viewer-borders: 7.5px;
   }
 }
-@media screen and (1200px <= width < 1400px) {
+@media screen and (1200px < width <= 1400px) {
   .variables {
     --work-viewer-width: 400px;
   }
 }
-@media screen and (1024px <= width < 1400px) {
+@media screen and (1024px < width <= 1400px) {
   .variables {
     --height: 420px;
     --slider-container-width: calc(
@@ -154,7 +154,7 @@
     --work-viewer-height: 580px;
   }
 }
-@media screen and (1400px <= width < 1650px) {
+@media screen and (1400px < width <= 1650px) {
   .variables {
     --height: 480px;
     --work-viewer-width: 285px;
@@ -162,7 +162,7 @@
     --slider-container-width: calc(calc(var(--work-viewer-width) + 15px) * 3 + var(--work-viewer-margin) * 3);
   }
 }
-@media screen and (1650px <= width <= 1880px) {
+@media screen and (1650px < width <= 1880px) {
   .variables {
     --height: 480px;
     --work-viewer-width: 350px;

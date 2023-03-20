@@ -72,12 +72,12 @@
     margin-bottom: 48px;
   }
 }
-@media screen and (600px <= width < 1650px) {
+@media screen and (600px < width <= 1650px) {
   .titleContainer {
     --padding: 5%;
   }
 }
-@media screen and (600px <= width < 1024px) {
+@media screen and (600px < width <= 1024px) {
   .mainContainer {
     flex-direction: column;
   }
@@ -95,22 +95,22 @@
     font-size: 5em;
   }
 }
-@media screen and (600px <= width <= 800px) {
+@media screen and (600px < width <= 800px) {
   .roomVisualizer {
     width: 85%;
   }
 }
-@media screen and (800px <= width <= 900px) {
+@media screen and (800px < width <= 900px) {
   .roomVisualizer {
     width: 70%;
   }
 }
-@media screen and (900px <= width <= 1024px) {
+@media screen and (900px < width <= 1024px) {
   .roomVisualizer {
     width: 60%;
   }
 }
-@media screen and (1024px <= width < 1200px) {
+@media screen and (1024px < width <= 1200px) {
   .profession,
   .subtitle {
     font-size: 1.1em;
@@ -119,7 +119,7 @@
     font-size: 5em;
   }
 }
-@media screen and (1200px <= width < 1400px) {
+@media screen and (1200px < width <= 1400px) {
   .profession,
   .subtitle {
     font-size: 1.2em;
@@ -128,7 +128,7 @@
     font-size: 6em;
   }
 }
-@media screen and (1400px <= width < 1650px) {
+@media screen and (1400px < width <= 1650px) {
   .profession,
   .subtitle {
     font-size: 1.3em;
@@ -137,12 +137,12 @@
     font-size: 7em;
   }
 }
-@media screen and (1024px <= width <= 1200px) {
+@media screen and (1024px < width <= 1200px) {
   .variables {
     --room-width: 58%;
   }
 }
-@media screen and (1200px <= width <= 1400px) {
+@media screen and (1200px < width <= 1400px) {
   .variables {
     --room-width: 50%;
   }

@@ -10,11 +10,26 @@ import nodeJS from "../../assets/logo/NodeJS.png";
 import typescript from "../../assets/logo/TypeScript.png";
 import github from "../../assets/logo/github.png";
 import redux from "../../assets/logo/redux.png";
+import docker from "../../assets/logo/Docker.png";
 
 type Dictionary = {
   [key: string]: string;
 };
 
-const logos: Dictionary = { react, css, html, express, figma, javascript, jest, mongoDB, nodeJS, typescript, github, redux };
+const logos: Dictionary = {
+  react,
+  css,
+  html,
+  express,
+  figma,
+  javascript,
+  jest,
+  mongoDB,
+  nodeJS,
+  typescript,
+  github,
+  redux,
+  docker,
+};
 
 export default logos;

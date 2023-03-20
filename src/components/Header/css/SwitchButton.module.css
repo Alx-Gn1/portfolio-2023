@@ -1,0 +1,91 @@
+.variables {
+  --border-width: 1px;
+  --height: 3em;
+}
+.switchButton {
+  width: calc(var(--height) * 2.5);
+  composes: variables;
+  height: var(--height);
+  border-radius: var(--height);
+  border: var(--border-width) solid var(--primary-invert);
+  background-color: var(--primary);
+  padding: 0;
+  display: flex;
+  /* justify-content: flex-end; */
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  z-index: 0;
+}
+.switchButton.small {
+  width: var(--height);
+}
+.selectable {
+  width: calc(var(--height) - 4px - var(--border-width) * 4);
+  height: calc(var(--height) - 4px - var(--border-width) * 4);
+  margin-left: 2px;
+  border-radius: 50%;
+  border: var(--border-width) solid var(--primary-invert);
+  position: absolute;
+  left: 0;
+}
+.optionName {
+  --width: calc(var(--height) * 2.5 - var(--height));
+  width: var(--width);
+  position: absolute;
+  right: 0;
+}
+.switchButton.small .optionName {
+  display: none;
+}
+.optionName.option0 {
+  margin-right: calc(var(--border-width) * 3);
+}
+.selectable.option1 {
+  left: calc(100% - calc(var(--height) - var(--border-width) * 2));
+}
+.optionName.option1 {
+  right: calc(100% - var(--width) - var(--border-width) * 3);
+}
+.switchButton * {
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (width <= 420px) {
+  .variables {
+    --height: 2.2em;
+  }
+  .optionName {
+    font-size: 0.8em;
+  }
+  .optionName.option0 {
+    margin-right: calc(var(--border-width) * 6);
+  }
+}
+@media screen and (420px < width <= 500px) {
+  .variables {
+    --height: 2.5em;
+  }
+}
+@media screen and (width <= 600px) {
+  .switchButton {
+    background-color: var(--primary-invert);
+  }
+  .selectable,
+  .switchButton {
+    border-color: var(--primary);
+  }
+  .optionName {
+    color: var(--text-invert);
+  }
+}
+@media screen and (600px < width <= 1024px) {
+  .variables {
+    --height: 2.5em;
+  }
+}
+@media screen and (800px < width <= 1024px) {
+  .variables {
+    --height: 2.5em;
+  }
+}

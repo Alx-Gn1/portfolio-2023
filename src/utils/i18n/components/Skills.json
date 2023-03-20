@@ -3,6 +3,7 @@
     "skills": {
       "title": "Skills",
       "skillsfromOpenClassroom": "Skills acquired through OpenClassrooms parcour:",
+      "other": "Other...",
       "skillListOC": {
         "0": "Choose a technical solution adapted to your client and work in Agile mode",
         "1": "Configure an automated information monitoring system, acquire information manually through competitive intelligence",
@@ -18,6 +19,48 @@
         "0": "Create a website model with Figma",
         "1": "Add multi langage support to a website",
         "2": "Create dynamic web application using TypeScript"
+      },
+      "skillPerTechnology": {
+        "React": [
+          "Create a React App using React v18",
+          "Create UI elements using dynamic and reusable React Components",
+          "Configure navigation on a single page application using React Router up to V6",
+          "Connecting the frontend to an Api and handle asynchronous datas",
+          "Cover a React App with unit and integration test using Jest and React Testing Library",
+          "Create a React App using TypeScript and Redux"
+        ],
+        "Redux": ["Handle the states of a React App using Redux"],
+        "JavaScript": [
+          "Manipulate the DOM",
+          "Handle user events",
+          "Get and handle form data from a user",
+          "Communicate with an Api and handle asynchronous datas",
+          "Handle animations using Javascript and Css",
+          "Optimize a website performances"
+        ],
+        "TypeScript": [
+          "Create a React App using TypeScript",
+          "Défine props type for component",
+          "Type correctly all variables and parameters of functions across the app",
+          "Configurer et utiliser Redux en React TypeScript"
+        ],
+        "Express": [
+          "Create and configure a REST Api, implement a logical data model",
+          "Handle CRUD operations in a secured way",
+          "Store user data in a secured way",
+          "Protect an Express server against brut force",
+          "Implement a secured authentification system",
+          "Validate user request datas using schemas"
+        ],
+        "MongoDB": ["Concieve a Database structure", "Configure a logical data model"],
+        "Jest": ["Cover a React App with unit and integration test using Jest and React Testing Library"],
+        "Figma": [
+          "Design illustrations and icon for a website",
+          "Create a responsive website model",
+          "Create interactive component usable in the model",
+          "Use Material UI design kit on figma"
+        ],
+        "Docker": ["Still learning..."]
       }
     }
   },
@@ -25,6 +68,7 @@
     "skills": {
       "title": "Compétences",
       "skillsfromOpenClassroom": "Compétences acquises durant ma formation OpenClassrooms :",
+      "other": "Autre...",
       "skillListOC": {
         "0": "Choisir une solution technique adaptée à un client et développer en Agile",
         "1": "Configurer un système de veille informationnelle automatisé, rechercher des informations dans le cadre d'une veille concurencielle",
@@ -40,6 +84,48 @@
         "0": "Créer une maquette de site web à l'aide de Figma",
         "1": "Ajouter le support de plusieurs langues sur un site web",
         "2": "Créer des sites web dynamiques avec TypeScript"
+      },
+      "skillPerTechnology": {
+        "React": [
+          "Créer une application sous React 18",
+          "Créer des éléments d'interface grâce à des composants dynamiques et réutilisables",
+          "Configurer la navigation entre les pages de l'application avec React Router jusqu'à la V6",
+          "Communiquer avec une API et gérer des données asynchrones",
+          "Réaliser des test unitaires et des test d'intégrations à l'aide de Jest/React Testing Library",
+          "Créer une application React utilisant TypeScript et Redux"
+        ],
+        "Redux": ["Gérer les states d'une application React avec Redux"],
+        "JavaScript": [
+          "Manipuler les éléments du DOM",
+          "Gérer les évènements utilisateurs",
+          "Récupérer les données utilisateurs via un formulaire",
+          "Communiquer avec une API et gérer des données asynchrones",
+          "Gérer des animations avec Javascript et Css",
+          "Optimiser les performances d'un site"
+        ],
+        "TypeScript": [
+          "Créer une application React TypeScript",
+          "Définir les types des props des Component",
+          "Définir correctement les types des variables ainsi que des paramètres de fonctions à travers l'application",
+          "Configurer et utiliser Redux en React TypeScript"
+        ],
+        "Express": [
+          "Créer et configurer une Api REST, implémenter un modèle logique de données",
+          "Mettre en oeuvre des opérations CRUD de manière sécurisée",
+          "Stocker des données de manière sécurisé",
+          "Protéger un serveur Express contre des attaques de force brute",
+          "Créer un système d'authentification sécurisé",
+          "Valider les données des requêtes utilisateurs à l'aide de schemas"
+        ],
+        "MongoDB": ["Concevoir la structure d'une base de données", "Configurer un modèle logique de données"],
+        "Jest": ["Réaliser des test unitaires et des test d'intégrations à l'aide de Jest/React Testing Library"],
+        "Figma": [
+          "Designer des illustrations et icon pour un site web",
+          "Créer une maquette statique d'un site web Responsive",
+          "Créer des component interactifs utilisables sur une maquette",
+          "Utiliser le design kit Material UI sur figma"
+        ],
+        "Docker": ["En cours d'apprentissage..."]
       }
     }
   }

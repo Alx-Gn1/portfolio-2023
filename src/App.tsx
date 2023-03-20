@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import setAppTheme from "./utils/functions/setAppTheme";
 import About from "./components/About";
 import IntroSection from "./components/IntroSection";
-import Skills from "./components/Skills";
+import Skills from "./components/Skills/Skills";
 import Works from "./components/Works";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";

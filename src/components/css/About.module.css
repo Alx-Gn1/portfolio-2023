@@ -2,8 +2,11 @@
   scroll-margin-top: 220px;
   margin-top: 200px;
   background-color: var(--primary-dark);
-  border-radius: 16px;
-  border: 2px solid var(--primary-darker);
+  /* border-radius: 16px; */
+  border-top: 1px solid var(--primary-darker);
+  border-bottom: 1px solid var(--primary-darker);
+  margin-left: -64px;
+  width: 100%;
   padding: 32px 64px;
   position: relative;
   display: flex;
@@ -40,6 +43,8 @@
     scroll-margin-top: 120px;
     flex-direction: column-reverse;
     padding: 24px 32px;
+    margin-left: 0;
+    width: calc(100% - 64px);
   }
   .pictureOfMe {
     margin-bottom: 32px;
@@ -55,9 +60,11 @@
     font-size: 1.1em;
   }
 }
-@media screen and (600px <= width < 1024px) {
+@media screen and (600px < width <= 1024px) {
   .mainContainer {
     padding: 24px 48px;
+    margin-left: -24px;
+    width: calc(100% - 48px);
   }
   .pictureOfMe {
     display: none;
@@ -72,12 +79,12 @@
     margin: auto auto 24px 24px;
   }
 }
-@media screen and (600px <= width <= 1024px) {
+@media screen and (600px < width <= 1024px) {
   .mainContainer {
     scroll-margin-top: 230px;
   }
 }
-@media screen and (1024px <= width <= 1650px) {
+@media screen and (1024px < width <= 1650px) {
   .mainContainer {
     scroll-margin-top: 340px;
 

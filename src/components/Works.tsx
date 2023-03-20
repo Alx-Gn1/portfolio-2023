@@ -20,7 +20,7 @@ const Works = () => {
 
   useEffect(() => {
     setCurrentPage(1);
-  }, [userDevice]);
+  }, [userDevice, deviceWidth]);
 
   return (
     <section id="works" className={styles.mainContainer}>

@@ -3,7 +3,8 @@ import { useTranslation } from "react-i18next";
 import logos from "../utils/logos/logos";
 import { useEffect, useRef, useState } from "react";
 import { setupHoverListener } from "../utils/functions/workHover";
-import { useAppSelector } from "../app/hooks";
+import { useAppDispatch, useAppSelector } from "../app/hooks";
+import { setCurrentHover } from "../app/Slices/workHoverSlice";
 
 interface Props {
   date: string;
@@ -19,12 +20,26 @@ interface Props {
 const WorkViewer = (props: Props) => {
   const { t } = useTranslation();
   const { date, technologies, title, description, picture, githubLink, index, githubPageLink } = props;
-  const [isHover, setIsHover] = useState(false);
+  const [isHover, setIsHover] = useState(index === 0 ? true : false);
   const { userDevice } = useAppSelector((state) => state.userDevice);
+  const currentWorkHover = useAppSelector((state) => state.workHover.currentHover);
+  const dispatch = useAppDispatch();
 
   useEffect(() => {
-    setupHoverListener({ setIsHover, workId: "work-" + title, index });
-  }, [index, title]);
+    const mouseOver = () => {
+      setIsHover(true);
+      dispatch(setCurrentHover(index));
+    };
+    const mouseOut = () => {
+      setIsHover(false);
+    };
+
+    setupHoverListener({ workId: "work-" + title, mouseOver, mouseOut });
+  }, [index, title, dispatch]);
+
+  useEffect(() => {
+    if (currentWorkHover !== index) setIsHover(false);
+  }, [currentWorkHover, index]);
 
   return (
     <article

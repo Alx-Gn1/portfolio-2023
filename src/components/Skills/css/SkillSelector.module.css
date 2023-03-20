@@ -1,0 +1,44 @@
+.skillList {
+  /* border: 1px solid var(--primary-dark); */
+  position: relative;
+  /* flex: 1; */
+  min-height: 140px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px 32px;
+  width: calc(100% - 64px);
+  gap: 32px 16px;
+  align-items: flex-start;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+.displaySelected {
+  flex-wrap: nowrap;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 32px;
+  padding: 16px;
+  transform: translateX(-5%);
+  /* width: 100%; */
+}
+.takeFullSpace {
+  flex: 1;
+}
+.hide {
+  width: 0 !important;
+  height: 0;
+  overflow: hidden;
+}
+
+.default {
+  /* transition: all 5s ease-out; */
+  animation: showSelectorAnim 1s ease-out;
+}
+
+@keyframes showSelectorAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+  }
+}

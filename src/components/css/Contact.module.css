@@ -86,7 +86,7 @@
     height: 64px;
   }
 }
-@media screen and (1024px <= width <= 1650px) {
+@media screen and (1024px < width <= 1650px) {
   .content {
     width: 540px;
   }

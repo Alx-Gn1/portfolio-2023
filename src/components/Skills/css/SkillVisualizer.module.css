@@ -1,0 +1,89 @@
+.skillContainer {
+  transition: all 0.25s ease-out;
+  --img-size: 32px;
+  --gap: 8px;
+  width: 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap);
+  cursor: pointer;
+  animation: componentLoaded 0.5s ease-in-out;
+}
+.skillContainer:hover {
+  transform: scale(1.05);
+}
+.skillName {
+  text-align: center;
+  font-size: 1.1em;
+}
+.skillContainer img {
+  width: var(--img-size);
+  height: var(--img-size);
+  object-fit: contain;
+}
+.skillList {
+  width: 75%;
+  list-style-type: none;
+  font-size: 1em;
+  animation: listAnim 0.5s ease-in-out;
+}
+.skillList li {
+  transition: all 0.3s ease-in-out;
+  margin: 16px 0;
+  background-color: var(--primary-darker);
+  border-radius: 8px;
+  width: calc(100% + 48px);
+  padding-bottom: 2px;
+}
+.skillList span {
+  animation: textAnim 0.5s ease-in-out;
+  color: unset;
+  width: 100%;
+  width: calc(100% - 48px);
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: var(--primary-dark);
+}
+.skillList li:has(~ li:hover),
+.skillList li:hover ~ li {
+  color: var(--text-gray-dark);
+}
+.skillList li:has(+ li:hover),
+.skillList li:hover + li {
+  color: var(--text-gray);
+}
+
+@keyframes componentLoaded {
+  0% {
+    transform: scale(0.1);
+    /* height: 0%; */
+    opacity: 0;
+  }
+  100% {
+  }
+}
+
+@keyframes listAnim {
+  0% {
+    width: 0%;
+    height: 1%;
+    font-size: 0;
+    align-self: baseline;
+    margin-top: 32px;
+  }
+  100% {
+  }
+}
+@keyframes textAnim {
+  0% {
+    color: transparent;
+  }
+  100% {
+  }
+}
+
+@media screen and (width <= 600px) {
+}

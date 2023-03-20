@@ -7,27 +7,30 @@ interface DeviceSelectFunctions {
 export const setupMediaListeners = (dispatch: Function, deviceSelect: DeviceSelectFunctions) => {
   const { setDesktop, setMobile, setTablet } = deviceSelect;
 
-  const setUserDevice = () => {
-    if (window.matchMedia("(width < 400px)").matches) {
-      dispatch(setMobile());
-    } else if (window.matchMedia("(400px <= width < 500px)").matches) {
-      dispatch(setMobile(400));
-    } else if (window.matchMedia("(500px <= width < 600px)").matches) {
-      dispatch(setMobile(500));
-    } else if (window.matchMedia("(600px <= width < 1024px)").matches) {
-      dispatch(setTablet());
-    } else if (window.matchMedia("(1024px <= width < 1200px)").matches) {
-      dispatch(setDesktop(1024));
-    } else if (window.matchMedia("(1200px <= width < 1400px)").matches) {
-      dispatch(setDesktop(1200));
-    } else if (window.matchMedia("(1400px <= width < 1650px)").matches) {
-      dispatch(setDesktop(1400));
-    } else if (window.matchMedia("(1650px <= width < 1800px)").matches) {
-      dispatch(setDesktop(1650));
-    } else if (window.matchMedia("(1800px <= width)").matches) {
-      dispatch(setDesktop(1800));
-    }
+  const listenBreakpoint = (min: number, max?: number) => {
+    const setDeviceType = () => {
+      if (max! <= 600) dispatch(setMobile(min));
+      if (max! <= 1024 && max! > 600) dispatch(setTablet(min));
+      if (min >= 1024) dispatch(setDesktop(min));
+    };
+
+    if (max && window.matchMedia(`(${min}px < width <= ${max}px)`).matches) setDeviceType();
+    if (!max && window.matchMedia(`(${min}px < width)`).matches) setDeviceType();
   };
+
+  const setUserDevice = () => {
+    listenBreakpoint(0, 400);
+    listenBreakpoint(400, 500);
+    listenBreakpoint(500, 600);
+    listenBreakpoint(600, 800);
+    listenBreakpoint(800, 1024);
+    listenBreakpoint(1200, 1400);
+    listenBreakpoint(1400, 1650);
+    listenBreakpoint(1650, 1800);
+    listenBreakpoint(1800);
+
+  };
+  
   setUserDevice();
   window.addEventListener("resize", setUserDevice);
 };
