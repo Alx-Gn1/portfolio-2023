@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-2023/static/css/main.b60c4096.css",
-    "main.js": "/portfolio-2023/static/js/main.c42ae718.js",
+    "main.js": "/portfolio-2023/static/js/main.47715f39.js",
     "static/media/Anton-Regular.ttf": "/portfolio-2023/static/media/Anton-Regular.170b842f9a8cd6150a0d.ttf",
     "static/media/isometric-room-small.webp": "/portfolio-2023/static/media/isometric-room-small.78fe5ba59976887f12c3.webp",
     "static/media/isometric-room.webp": "/portfolio-2023/static/media/isometric-room.78fe5ba59976887f12c3.webp",
@@ -14,10 +14,10 @@
     "index.html": "/portfolio-2023/index.html",
     "static/media/Hamburger_icon.svg": "/portfolio-2023/static/media/Hamburger_icon.b778cb1777612594612f0bf2e4ff8477.svg",
     "main.b60c4096.css.map": "/portfolio-2023/static/css/main.b60c4096.css.map",
-    "main.c42ae718.js.map": "/portfolio-2023/static/js/main.c42ae718.js.map"
+    "main.47715f39.js.map": "/portfolio-2023/static/js/main.47715f39.js.map"
   },
   "entrypoints": [
     "static/css/main.b60c4096.css",
-    "static/js/main.c42ae718.js"
+    "static/js/main.47715f39.js"
   ]
 }
