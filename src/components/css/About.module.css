@@ -37,6 +37,32 @@
 .tabletPicture {
   display: none;
 }
+.CVlink {
+  color: var(--text-link);
+  position: relative;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+}
+.CVlink:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--secondary-dark);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.CVlink:hover {
+  cursor: pointer;
+  color: var(--text-primary);
+}
+.CVlink:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 
 @media screen and (width <= 600px) {
   .mainContainer {

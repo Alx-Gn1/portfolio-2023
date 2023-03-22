@@ -4,6 +4,8 @@
       "title": "Skills",
       "skillsfromOpenClassroom": "Skills acquired through OpenClassrooms parcour:",
       "other": "Other...",
+      "design": "Design",
+      "ciCD": "CI / CD",
       "skillListOC": {
         "0": "Choose a technical solution adapted to your client and work in Agile mode",
         "1": "Configure an automated information monitoring system, acquire information manually through competitive intelligence",
@@ -60,7 +62,16 @@
           "Create interactive component usable in the model",
           "Use Material UI design kit on figma"
         ],
-        "Docker": ["Still learning..."]
+        "Docker": [
+          "Create a container to host a web application (JavaScript Vanilla, ReactJS, ExpressJS)",
+          "Use Docker Compose to host a web server composed of multiple applications (in MERN stack per example)",
+          "Save Docker images on Docker Hub, know how to make use of most used command"
+        ],
+        "AWS": [
+          "Connect to an AWS instance and configure it",
+          "Host a Docker image on AWS EC2 Container",
+          "Setup basic security rules of a container"
+        ]
       }
     }
   },
@@ -69,6 +80,8 @@
       "title": "Compétences",
       "skillsfromOpenClassroom": "Compétences acquises durant ma formation OpenClassrooms :",
       "other": "Autre...",
+      "design": "Design",
+      "ciCD": "CI / CD",
       "skillListOC": {
         "0": "Choisir une solution technique adaptée à un client et développer en Agile",
         "1": "Configurer un système de veille informationnelle automatisé, rechercher des informations dans le cadre d'une veille concurencielle",
@@ -125,7 +138,16 @@
           "Créer des component interactifs utilisables sur une maquette",
           "Utiliser le design kit Material UI sur figma"
         ],
-        "Docker": ["En cours d'apprentissage..."]
+        "Docker": [
+          "Créer un compartiment pour héberger une application (Javascript vanilla, ReactJS, ExpressJS)",
+          "Utiliser Docker Compose pour lancer un serveur composé de plusieurs services (application en stack MERN)",
+          "Enregistrer une image Docker sur Docker Hub, et maîtrise des commandes les plus utilisées"
+        ],
+        "AWS": [
+          "Se connecter à une instance AWS et la configurer",
+          "Héberger une image Docker dans un conteneur AWS EC2",
+          "Paramétrer les règles de sécurité d'un conteneur"
+        ]
       }
     }
   }

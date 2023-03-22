@@ -50,15 +50,15 @@
   flex-direction: column;
   gap: 24px;
 }
-.mainSkills,
-.otherSkills {
+.twoColumnSkills,
+.oneColumnSkills {
   display: flex;
   justify-content: center;
 }
-.mainSkills article {
+.twoColumnSkills article {
   width: 50%;
 }
-.otherSkills article {
+.oneColumnSkills article {
   width: 70%;
 }
 .skillsContainer article {

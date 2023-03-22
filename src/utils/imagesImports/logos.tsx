@@ -11,6 +11,7 @@ import typescript from "../../assets/logo/TypeScript.png";
 import github from "../../assets/logo/github.png";
 import redux from "../../assets/logo/redux.png";
 import docker from "../../assets/logo/Docker.png";
+import aws from "../../assets/logo/AWS.png";
 
 type Dictionary = {
   [key: string]: string;
@@ -30,6 +31,7 @@ const logos: Dictionary = {
   github,
   redux,
   docker,
+  aws,
 };
 
 export default logos;

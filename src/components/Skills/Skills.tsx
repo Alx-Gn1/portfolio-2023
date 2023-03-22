@@ -39,7 +39,7 @@ const Skills = () => {
         </ul>
       </article>
       <section className={styles.skillsContainer}>
-        <div className={styles.mainSkills}>
+        <div className={styles.twoColumnSkills}>
           <SkillSelector
             category="Frontend"
             skillList={[
@@ -47,6 +47,7 @@ const Skills = () => {
               { name: "Redux", logo: logos.redux },
               { name: "JavaScript", logo: logos.javascript },
               { name: "TypeScript", logo: logos.typescript },
+              { name: "Jest", logo: logos.jest },
             ]}
           />
           <SkillSelector
@@ -57,15 +58,19 @@ const Skills = () => {
             ]}
           />
         </div>
-        <div className={styles.otherSkills}>
+        <div className={styles.twoColumnSkills}>
           <SkillSelector
-            category={t("skills.other")}
+            category={t("skills.design")}
             skillList={[
-              { name: "Jest", logo: logos.jest },
               { name: "Figma", logo: logos.figma },
-              { name: "Docker", logo: logos.docker },
             ]}
-          />
+          />          <SkillSelector
+          category={t("skills.ciCD")}
+          skillList={[
+            { name: "Docker", logo: logos.docker },
+            { name: "AWS", logo: logos.aws },
+          ]}
+        />
         </div>
       </section>
     </section>

@@ -1,7 +1,7 @@
 [
   {
     "date": "02/2023",
-    "technologies": ["react", "typescript", "redux"],
+    "technologies": ["react", "typescript", "redux", "aws"],
     "title": "Portfolio",
     "description": "works.workDescriptions.portfolio",
     "picture": "portfolio",
