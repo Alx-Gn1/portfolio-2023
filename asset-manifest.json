@@ -1,23 +1,29 @@
 {
   "files": {
-    "main.css": "/portfolio-2023/static/css/main.b60c4096.css",
-    "main.js": "/portfolio-2023/static/js/main.47715f39.js",
+    "main.css": "/portfolio-2023/static/css/main.90dc2769.css",
+    "main.js": "/portfolio-2023/static/js/main.9590fa8c.js",
+    "static/media/isometric-room-small.webp": "/portfolio-2023/static/media/isometric-room-small.47677e90ebf7dab83c1c.webp",
+    "static/media/isometric-room.webp": "/portfolio-2023/static/media/isometric-room.47677e90ebf7dab83c1c.webp",
     "static/media/Anton-Regular.ttf": "/portfolio-2023/static/media/Anton-Regular.170b842f9a8cd6150a0d.ttf",
-    "static/media/isometric-room-small.webp": "/portfolio-2023/static/media/isometric-room-small.78fe5ba59976887f12c3.webp",
-    "static/media/isometric-room.webp": "/portfolio-2023/static/media/isometric-room.78fe5ba59976887f12c3.webp",
     "static/media/profile.jpg": "/portfolio-2023/static/media/profile.59090e2d88d316e63565.jpg",
     "static/media/e-mail.png": "/portfolio-2023/static/media/e-mail.89fd18f9989615d65735.png",
+    "static/media/nina-carducci.webp": "/portfolio-2023/static/media/nina-carducci.7f42212345a97040f441.webp",
+    "static/media/booki.webp": "/portfolio-2023/static/media/booki.5f180f6acac1a86ac3f9.webp",
+    "static/media/mon-vieux-grimoire.webp": "/portfolio-2023/static/media/mon-vieux-grimoire.284bc631fecd4799482a.webp",
+    "static/media/portfolio-sophie-bluel.webp": "/portfolio-2023/static/media/portfolio-sophie-bluel.75e6038d0c9ff0a1bfb6.webp",
+    "static/media/kasa.webp": "/portfolio-2023/static/media/kasa.309336afeb2f2acd68ea.webp",
+    "static/media/portfolio.webp": "/portfolio-2023/static/media/portfolio.a8e9ed470b6284e47995.webp",
     "static/media/LinkedIn.png": "/portfolio-2023/static/media/LinkedIn.7d7a824c79fcf2471910.png",
     "static/media/ecran-pc.png": "/portfolio-2023/static/media/ecran-pc.231d56ea1c449b2d1f8f.png",
     "static/media/Jest.png": "/portfolio-2023/static/media/Jest.876b9ab00a1054be30bb.png",
     "static/media/NodeJS.png": "/portfolio-2023/static/media/NodeJS.b58016de7fe8d2b79b4d.png",
     "index.html": "/portfolio-2023/index.html",
     "static/media/Hamburger_icon.svg": "/portfolio-2023/static/media/Hamburger_icon.b778cb1777612594612f0bf2e4ff8477.svg",
-    "main.b60c4096.css.map": "/portfolio-2023/static/css/main.b60c4096.css.map",
-    "main.47715f39.js.map": "/portfolio-2023/static/js/main.47715f39.js.map"
+    "main.90dc2769.css.map": "/portfolio-2023/static/css/main.90dc2769.css.map",
+    "main.9590fa8c.js.map": "/portfolio-2023/static/js/main.9590fa8c.js.map"
   },
   "entrypoints": [
-    "static/css/main.b60c4096.css",
-    "static/js/main.47715f39.js"
+    "static/css/main.90dc2769.css",
+    "static/js/main.9590fa8c.js"
   ]
 }
