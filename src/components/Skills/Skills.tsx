@@ -1,7 +1,7 @@
 import styles from "./css/Skills.module.css";
 import { useTranslation } from "react-i18next";
 import SkillVisualizer from "./SkillVisualizer";
-import logos from "../../utils/logos/logos";
+import logos from "../../utils/imagesImports/logos";
 import SkillSelector from "./SkillSelector";
 import { useAppDispatch, useAppSelector } from "../../app/hooks";
 import { selectSkill } from "../../app/Slices/skillSelectorSlice";

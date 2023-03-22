@@ -29,7 +29,7 @@ const About = () => {
           </p>
           <p>
             {t("about.seeMyResume")}
-            <a href="https://www.francecompetences.fr/recherche/rncp/36076/" target="_blank" rel="noreferrer noopener">
+            <a href="https://ec2-13-48-137-239.eu-north-1.compute.amazonaws.com/public-files/CV.pdf" target="_blank" rel="noreferrer noopener">
               {t("about.seeMyResumeLink")}
             </a>
           </p>

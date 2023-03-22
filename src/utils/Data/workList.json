@@ -4,8 +4,7 @@
     "technologies": ["react", "typescript", "redux"],
     "title": "Portfolio",
     "description": "works.workDescriptions.portfolio",
-    "githubPageLink":"https://alx-gn1.github.io/portfolio-2023/",
-    "picture": "https://ec2-13-48-137-239.eu-north-1.compute.amazonaws.com:80/images/portfolio.png",
+    "picture": "portfolio",
     "githubLink": "https://alx-gn1.github.io/portfolio-2023/"
   },
   {
@@ -13,7 +12,7 @@
     "technologies": ["mongoDB", "express", "react", "nodeJS"],
     "title": "Mon Vieux Grimoire",
     "description": "works.workDescriptions.monVieuxGrimoire",
-    "picture": "https://ec2-13-48-137-239.eu-north-1.compute.amazonaws.com:80/images/mon-vieux-grimoire.png",
+    "picture": "monVieuxGrimoire",
     "githubPageLink":"https://alx-gn1.github.io/mon-vieux-grimoire/",
     "githubLink": "https://github.com/Alx-Gn1/mon-vieux-grimoire"
   },
@@ -22,7 +21,7 @@
     "technologies": ["react", "jest"],
     "title": "Kasa",
     "description": "works.workDescriptions.kasa",
-    "picture": "https://ec2-13-48-137-239.eu-north-1.compute.amazonaws.com:80/images/kasa.png",
+    "picture": "kasa",
     "githubPageLink": "https://alx-gn1.github.io/kasa-location-immobiliere",
     "githubLink": "https://github.com/Alx-Gn1/kasa-location-immobiliere"
   },
@@ -31,7 +30,7 @@
     "technologies": ["javascript", "html", "css"],
     "title": "Debug Nina Carducci",
     "description": "works.workDescriptions.ninaCarducci",
-    "picture": "https://ec2-13-48-137-239.eu-north-1.compute.amazonaws.com:80/images/nina-carducci.png",
+    "picture": "ninaCarducci",
     "githubPageLink": "https://alx-gn1.github.io/Nina-Carducci/",
     "githubLink": "https://github.com/Alx-Gn1/Nina-Carducci"
   },
@@ -40,7 +39,7 @@
     "technologies": ["javascript", "html", "css"],
     "title": "Portfolio Sophie Bluel",
     "description": "works.workDescriptions.sophieBluel",
-    "picture": "https://ec2-13-48-137-239.eu-north-1.compute.amazonaws.com:80/images/portfolio-sophie-bluel.png",
+    "picture": "portfolioSophieBluel",
     "githubPageLink": "https://alx-gn1.github.io/PortfolioArchitecteInterieur/",
     "githubLink": "https://github.com/Alx-Gn1/PortfolioArchitecteInterieur"
   },
@@ -49,7 +48,7 @@
     "technologies": ["html", "css"],
     "title": "Booki",
     "description": "works.workDescriptions.booki",
-    "picture": "https://ec2-13-48-137-239.eu-north-1.compute.amazonaws.com:80/images/booki.png",
+    "picture": "booki",
     "githubPageLink": "https://alx-gn1.github.io/Booki/",
     "githubLink": "https://github.com/Alx-Gn1/Booki"
   }

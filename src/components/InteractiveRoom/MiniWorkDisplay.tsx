@@ -1,6 +1,7 @@
 import styles from "../../components/css/WorkViewer.module.css";
 import { useTranslation } from "react-i18next";
-import logos from "../../utils/logos/logos";
+import logos from "../../utils/imagesImports/logos";
+import projectImages from "../../utils/imagesImports/projectImages";
 
 interface Props {
   date: string;
@@ -26,7 +27,7 @@ const MiniWorkDisplay = (props: Props) => {
           ))}
         </div>
         <img
-          src={picture}
+          src={projectImages[picture]}
           alt={title + " project"}
           className={`${styles.projectImage} ${styles.mini} ${githubPageLink ? styles.linkImage : null}`}
           onClick={() => {
