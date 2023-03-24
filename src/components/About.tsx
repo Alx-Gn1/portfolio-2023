@@ -1,14 +1,14 @@
 import styles from "./css/About.module.css";
 import { useTranslation } from "react-i18next";
-import photoOfMyself from "../assets/profile.jpg";
+import photoOfMyself from "../assets/photo-portfolio.webp";
 
 const About = () => {
   const { t } = useTranslation();
   return (
     <section id="about" className={styles.mainContainer}>
       <article className={styles.contentContainer}>
-        <img src={photoOfMyself} alt="Portrait Alexandre Guenin" className={styles.tabletPicture} loading="lazy" />
         <h2>{t("about.title")}</h2>
+        <img src={photoOfMyself} alt="Portrait Alexandre Guenin" className={styles.tabletPicture} loading="lazy" />
         <p className={styles.introduction}>
           {t("about.introductionPart1")}
           <a href="https://www.francecompetences.fr/recherche/rncp/36076/" target="_blank" rel="noreferrer noopener">
@@ -29,14 +29,13 @@ const About = () => {
         </p>
         <p>
           {t("about.seeMyResume")}
-          <span
-            className={styles.CVlink}
-            onClick={() => {
-              window.open("https://ec2-13-48-137-239.eu-north-1.compute.amazonaws.com/public-files/CV.pdf");
-            }}
+          <a
+            href="https://www.canva.com/design/DAFd2SuFAtk/GTcMJNC1czljOohcQRJrFA/view?utm_content=DAFd2SuFAtk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+            target={"_blank"}
+            rel="noreferrer"
           >
             {t("about.seeMyResumeLink")}
-          </span>
+          </a>
         </p>
       </article>
       <img src={photoOfMyself} alt="Portrait Alexandre Guenin" className={styles.pictureOfMe} loading="lazy" />

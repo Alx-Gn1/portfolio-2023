@@ -16,10 +16,6 @@ function App() {
   const dispatch = useAppDispatch();
   setupMediaListeners(dispatch, { setDesktop, setMobile, setTablet });
 
-  useEffect(() => {
-    hideAddressBar();
-  }, []);
-
   return (
     <>
       <Header />

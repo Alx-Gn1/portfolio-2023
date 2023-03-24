@@ -6,6 +6,7 @@ const CharacterClicker = (props: { onClick: Function }) => {
   const { t } = useTranslation();
   return (
     <div
+    
       className={styles.characterClicker}
       onClick={() => {
         onClick();

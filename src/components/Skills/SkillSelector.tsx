@@ -30,7 +30,6 @@ const SkillSelector = (props: Props) => {
     }
   }, [selectedSkill, skillList]);
 
-  // console.log(containerStyle);
   const { t } = useTranslation();
   return (
     <article className={containerStyle!}>

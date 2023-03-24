@@ -69,8 +69,7 @@
         ],
         "AWS": [
           "Connect to an AWS instance and configure it",
-          "Host a Docker image on AWS EC2 Container",
-          "Setup basic security rules of a container"
+          "Host a Docker image on AWS EC2 Container"
         ]
       }
     }
@@ -145,8 +144,7 @@
         ],
         "AWS": [
           "Se connecter à une instance AWS et la configurer",
-          "Héberger une image Docker dans un conteneur AWS EC2",
-          "Paramétrer les règles de sécurité d'un conteneur"
+          "Héberger une image Docker dans un conteneur AWS EC2"
         ]
       }
     }

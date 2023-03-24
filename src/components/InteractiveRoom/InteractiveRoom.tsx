@@ -10,6 +10,8 @@ import isometricRoomMobile from "../../assets/isometric-room/isometric-room-smal
 import ComputerFanBackground from "./ComputerFanBackground";
 import computerScreen from "../../assets/isometric-room/ecran-pc.png";
 import { useAppSelector } from "../../app/hooks";
+import clickerStyles from "./clickers/css/clickers.module.css";
+import { highlightClickersAnim } from "../../utils/functions/highlightClickersAnim";
 
 const InteractiveRoom = () => {
   const [currentDialog, setCurrentDialog] = useState<null | string>(null);
@@ -21,7 +23,18 @@ const InteractiveRoom = () => {
     };
     window.addEventListener("scroll", closeWhenScrollDown, true);
 
-    return window.removeEventListener("scroll", closeWhenScrollDown, true)
+    return window.removeEventListener("scroll", closeWhenScrollDown, true);
+  }, []);
+
+  useEffect(() => {
+    const animDuration = 800;
+    let animTimeout = 3000;
+    const animInterval = () => {
+      highlightClickersAnim(clickerStyles, animDuration);
+      animTimeout = animTimeout < 15000 ? animTimeout * 1.5 : animTimeout;
+      setTimeout(animInterval, animTimeout);
+    };
+    setTimeout(animInterval, 500);
   }, []);
 
   return (

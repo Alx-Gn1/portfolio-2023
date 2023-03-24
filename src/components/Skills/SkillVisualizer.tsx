@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { useAppSelector } from "../../app/hooks";
 import styles from "./css/SkillVisualizer.module.css";
 
 interface Props {
@@ -17,6 +18,7 @@ interface Props {
 
 const SkillVisualizer = (props: Props) => {
   const { t } = useTranslation();
+  const { userDevice } = useAppSelector((state) => state.userDevice);
   const { skillName, logo, selectedSkill, setSelectedSkill } = props;
   const skillsTranslationList = t(`skills.skillPerTechnology.${skillName}`, { returnObjects: true });
   const skillsPerTechnology = Object.values(skillsTranslationList).map((value) => value);
@@ -29,7 +31,10 @@ const SkillVisualizer = (props: Props) => {
             selectedSkill === skillName ? `${styles.skillContainer} ${styles.selected}` : styles.skillContainer
           }
           onClick={() => {
-            if (selectedSkill !== skillName) setSelectedSkill(skillName);
+            if (selectedSkill !== skillName) {
+              if (userDevice === "mobile") window.scrollTo(0, 2825)
+              setSelectedSkill(skillName);
+            }
           }}
         >
           <img src={logo} alt={skillName + "logo"} loading="lazy" />
