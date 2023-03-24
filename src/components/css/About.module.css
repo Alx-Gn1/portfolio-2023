@@ -19,7 +19,8 @@
 }
 .pictureOfMe {
   width: 240px;
-  /* height: 240px; */
+  height: 300px;
+  object-fit: cover;
   border-radius: 5%;
   background-color: var(--primary-darker);
 }
