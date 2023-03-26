@@ -1,8 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-2023/static/css/main.efaaa964.css",
-    "main.js": "/portfolio-2023/static/js/main.aeecbe30.js",
-    "static/media/isometric-room-small.webp": "/portfolio-2023/static/media/isometric-room-small.47677e90ebf7dab83c1c.webp",
+    "main.js": "/portfolio-2023/static/js/main.ac95f69e.js",
     "static/media/isometric-room.webp": "/portfolio-2023/static/media/isometric-room.47677e90ebf7dab83c1c.webp",
     "static/media/Anton-Regular.ttf": "/portfolio-2023/static/media/Anton-Regular.170b842f9a8cd6150a0d.ttf",
     "static/media/photo-portfolio.webp": "/portfolio-2023/static/media/photo-portfolio.14762d267d151bede50f.webp",
@@ -13,17 +12,36 @@
     "static/media/portfolio-sophie-bluel.webp": "/portfolio-2023/static/media/portfolio-sophie-bluel.75e6038d0c9ff0a1bfb6.webp",
     "static/media/kasa.webp": "/portfolio-2023/static/media/kasa.309336afeb2f2acd68ea.webp",
     "static/media/portfolio.webp": "/portfolio-2023/static/media/portfolio.a8e9ed470b6284e47995.webp",
+    "static/media/isometric-room-small.webp": "/portfolio-2023/static/media/isometric-room-small.1ff166dc0b89253a0a4e.webp",
     "static/media/LinkedIn.png": "/portfolio-2023/static/media/LinkedIn.7d7a824c79fcf2471910.png",
-    "static/media/ecran-pc.png": "/portfolio-2023/static/media/ecran-pc.231d56ea1c449b2d1f8f.png",
-    "static/media/Jest.png": "/portfolio-2023/static/media/Jest.876b9ab00a1054be30bb.png",
-    "static/media/NodeJS.png": "/portfolio-2023/static/media/NodeJS.b58016de7fe8d2b79b4d.png",
+    "static/media/ecran-pc.webp": "/portfolio-2023/static/media/ecran-pc.364415595057025df4f5.webp",
+    "static/media/React.webp": "/portfolio-2023/static/media/React.3877cf5b4784b3ffd504.webp",
+    "static/media/redux.webp": "/portfolio-2023/static/media/redux.d9ee404ef174dcbc771c.webp",
+    "static/media/NodeJS.webp": "/portfolio-2023/static/media/NodeJS.8c1db0670244863ad1da.webp",
+    "static/media/Jest.webp": "/portfolio-2023/static/media/Jest.24c1e985b129cd617629.webp",
+    "static/media/Docker.webp": "/portfolio-2023/static/media/Docker.c859abec8e9a313fbd29.webp",
+    "static/media/AWS.webp": "/portfolio-2023/static/media/AWS.412109c6319eace6d949.webp",
+    "static/media/mongoDB.webp": "/portfolio-2023/static/media/mongoDB.ca7a20e2ae73ae6221be.webp",
     "index.html": "/portfolio-2023/index.html",
+    "static/media/Css.webp": "/portfolio-2023/static/media/Css.37c61c401ecc52fcfd26.webp",
+    "static/media/HTML.webp": "/portfolio-2023/static/media/HTML.a79fb9b9652febbbc212.webp",
+    "static/media/english.webp": "/portfolio-2023/static/media/english.ebbbd029368414139851.webp",
+    "static/media/Express.webp": "/portfolio-2023/static/media/Express.bd51477a95b7d9f2235f.webp",
+    "static/media/github.webp": "/portfolio-2023/static/media/github.eae62afaf118b1a1e00f.webp",
+    "static/media/JavaScript.webp": "/portfolio-2023/static/media/JavaScript.007a5b3fd88913b7dbdc.webp",
+    "static/media/TypeScript.webp": "/portfolio-2023/static/media/TypeScript.9cf83670097b3a62f351.webp",
+    "static/media/Figma.webp": "/portfolio-2023/static/media/Figma.5f68a8bc018abbcdc212.webp",
     "static/media/Hamburger_icon.svg": "/portfolio-2023/static/media/Hamburger_icon.b778cb1777612594612f0bf2e4ff8477.svg",
+    "static/media/light-light.webp": "/portfolio-2023/static/media/light-light.3dbf7b3533bc6f2fd0eb.webp",
+    "static/media/dark-light.webp": "/portfolio-2023/static/media/dark-light.2ab2c0da5f9eb3ae4ab3.webp",
+    "static/media/light-dark.webp": "/portfolio-2023/static/media/light-dark.235cc48f54860be4d074.webp",
+    "static/media/dark-dark.webp": "/portfolio-2023/static/media/dark-dark.bf5dd081e4fea703ae95.webp",
+    "static/media/french.webp": "/portfolio-2023/static/media/french.499f0828d28e797dd30d.webp",
     "main.efaaa964.css.map": "/portfolio-2023/static/css/main.efaaa964.css.map",
-    "main.aeecbe30.js.map": "/portfolio-2023/static/js/main.aeecbe30.js.map"
+    "main.ac95f69e.js.map": "/portfolio-2023/static/js/main.ac95f69e.js.map"
   },
   "entrypoints": [
     "static/css/main.efaaa964.css",
-    "static/js/main.aeecbe30.js"
+    "static/js/main.ac95f69e.js"
   ]
 }
