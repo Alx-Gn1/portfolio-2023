@@ -3,7 +3,7 @@ import CharacterClicker from "./clickers/CharacterClicker";
 import SocialLinkClicker from "./clickers/SocialLinkClicker";
 import LibraryClicker from "./clickers/LibraryClicker";
 import WorksClicker from "./clickers/WorksClicker";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import DialogOpener from "./DialogOpener";
 import isometricRoom from "../../assets/isometric-room/isometric-room.webp";
 import isometricRoomMobile from "../../assets/isometric-room/isometric-room-small.webp";
@@ -26,16 +26,21 @@ const InteractiveRoom = () => {
     return window.removeEventListener("scroll", closeWhenScrollDown, true);
   }, []);
 
+  const animDuration = useRef(800);
+  const startAnim = useRef<number>();
+  const animTimeout = useRef(3000);
   useEffect(() => {
-    const animDuration = 800;
-    let animTimeout = 3000;
+    if (currentDialog) {
+      clearTimeout(startAnim.current);
+      startAnim.current = undefined;
+    }
     const animInterval = () => {
-      highlightClickersAnim(clickerStyles, animDuration);
-      animTimeout = animTimeout < 15000 ? animTimeout * 1.5 : animTimeout;
-      setTimeout(animInterval, animTimeout);
+      if (currentDialog === null) highlightClickersAnim(clickerStyles, animDuration.current);
+      animTimeout.current = animTimeout.current < 15000 ? animTimeout.current * 1.5 : animTimeout.current;
+      startAnim.current = setTimeout(animInterval, animTimeout.current, true);
     };
-    setTimeout(animInterval, 500);
-  }, []);
+    startAnim.current = setTimeout(animInterval, 500, true);
+  }, [currentDialog]);
 
   return (
     <div className={styles.container}>

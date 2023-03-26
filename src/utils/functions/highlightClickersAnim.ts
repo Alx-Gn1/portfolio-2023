@@ -1,4 +1,7 @@
-export const highlightClickersAnim = (clickerStyles: { readonly [key: string]: string }, animDuration:number) => {
+export const highlightClickersAnim = (
+  clickerStyles: { readonly [key: string]: string },
+  animDuration: number
+) => {
   const clickers = document.querySelectorAll("." + clickerStyles.clicker);
 
   const startAnim = setInterval(() => {
