@@ -1,17 +1,15 @@
-import { useTranslation } from "react-i18next";
 import setAppTheme from "../../utils/functions/setAppTheme";
 import { useState } from "react";
 import SwitchButton from "./SwitchButton";
-import darkThemeLightIcon from "../../assets/switch-icon/dark-light.png";
-import darkThemeDarkIcon from "../../assets/switch-icon/dark-dark.png";
-import lightThemeLightIcon from "../../assets/switch-icon/light-light.png";
-import lightThemeDarkIcon from "../../assets/switch-icon/light-dark.png";
+import darkThemeLightIcon from "../../assets/switch-icon/dark-light.webp";
+import darkThemeDarkIcon from "../../assets/switch-icon/dark-dark.webp";
+import lightThemeLightIcon from "../../assets/switch-icon/light-light.webp";
+import lightThemeDarkIcon from "../../assets/switch-icon/light-dark.webp";
 
 const ThemeSelectButton = (props: { userDevice: string }) => {
   const { userDevice } = props;
   const [theme, setTheme] = useState("light");
   setAppTheme(theme);
-  const { t } = useTranslation();
   return (
     <SwitchButton
       options={[

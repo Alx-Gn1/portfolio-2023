@@ -1,6 +1,5 @@
 import styles from "./css/SwitchButton.module.css";
-import { useTranslation } from "react-i18next";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 interface Props {
   options: Array<{ name: string; image: string }>;
@@ -10,7 +9,6 @@ interface Props {
 
 const SwitchButton = (props: Props) => {
   const { options, onClick, isSmall } = props;
-  const { t } = useTranslation();
   const [selectedOption, setSelectedOption] = useState<0 | 1>(0);
 
   return (

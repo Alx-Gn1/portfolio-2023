@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
 import SwitchButton from "./SwitchButton";
-import { useEffect, useRef } from "react";
-import frFlag from "../../assets/switch-icon/french.png";
-import enFlag from "../../assets/switch-icon/english.png";
+import { useRef } from "react";
+import frFlag from "../../assets/switch-icon/french.webp";
+import enFlag from "../../assets/switch-icon/english.webp";
 import { useAppSelector } from "../../app/hooks";
 
 const LangSelectButton = () => {

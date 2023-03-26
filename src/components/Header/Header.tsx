@@ -7,7 +7,6 @@ import NavBar from "./NavBar";
 import { useHideHeaderOnScrollDown } from "../../utils/hooks/useHideHeaderOnScrollDown";
 import ThemeSelectButton from "./ThemeSelectButton";
 import LangSelectButton from "./LangSelectButton";
-import SwitchButton from "./SwitchButton";
 
 const Header = () => {
   const [drawerIsOpen, setDrawerIsOpen] = useState(false);
@@ -44,8 +43,6 @@ const Header = () => {
       </div>
       <NavBar closeDrawer={closeDrawer} />
       <div className={styles.headerButtons}>
-        {/* <SwitchButton /> */}
-        {/* <SwitchButton /> */}
         <ThemeSelectButton userDevice={userDevice} />
         <LangSelectButton />
       </div>

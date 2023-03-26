@@ -8,7 +8,7 @@ import DialogOpener from "./DialogOpener";
 import isometricRoom from "../../assets/isometric-room/isometric-room.webp";
 import isometricRoomMobile from "../../assets/isometric-room/isometric-room-small.webp";
 import ComputerFanBackground from "./ComputerFanBackground";
-import computerScreen from "../../assets/isometric-room/ecran-pc.png";
+import computerScreen from "../../assets/isometric-room/ecran-pc.webp";
 import { useAppSelector } from "../../app/hooks";
 import clickerStyles from "./clickers/css/clickers.module.css";
 import { highlightClickersAnim } from "../../utils/functions/highlightClickersAnim";
