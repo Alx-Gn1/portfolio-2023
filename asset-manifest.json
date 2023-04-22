@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/portfolio-2023/static/css/main.efaaa964.css",
-    "main.js": "/portfolio-2023/static/js/main.ba8a1b8d.js",
+    "main.js": "/portfolio-2023/static/js/main.6ede303a.js",
     "static/media/isometric-room.webp": "/portfolio-2023/static/media/isometric-room.47677e90ebf7dab83c1c.webp",
     "static/media/Anton-Regular.ttf": "/portfolio-2023/static/media/Anton-Regular.170b842f9a8cd6150a0d.ttf",
+    "static/media/legal-gpt.webp": "/portfolio-2023/static/media/legal-gpt.58dd92e7c648b9de4f1d.webp",
     "static/media/photo-portfolio.webp": "/portfolio-2023/static/media/photo-portfolio.14762d267d151bede50f.webp",
     "static/media/e-mail.png": "/portfolio-2023/static/media/e-mail.89fd18f9989615d65735.png",
     "static/media/nina-carducci.webp": "/portfolio-2023/static/media/nina-carducci.7f42212345a97040f441.webp",
@@ -15,6 +16,7 @@
     "static/media/isometric-room-small.webp": "/portfolio-2023/static/media/isometric-room-small.1ff166dc0b89253a0a4e.webp",
     "static/media/LinkedIn.png": "/portfolio-2023/static/media/LinkedIn.7d7a824c79fcf2471910.png",
     "static/media/ecran-pc.webp": "/portfolio-2023/static/media/ecran-pc.364415595057025df4f5.webp",
+    "static/media/MySql.webp": "/portfolio-2023/static/media/MySql.24d35a6297e2d30fa3d8.webp",
     "static/media/React.webp": "/portfolio-2023/static/media/React.3877cf5b4784b3ffd504.webp",
     "static/media/redux.webp": "/portfolio-2023/static/media/redux.d9ee404ef174dcbc771c.webp",
     "static/media/NodeJS.webp": "/portfolio-2023/static/media/NodeJS.8c1db0670244863ad1da.webp",
@@ -23,6 +25,7 @@
     "static/media/AWS.webp": "/portfolio-2023/static/media/AWS.412109c6319eace6d949.webp",
     "static/media/mongoDB.webp": "/portfolio-2023/static/media/mongoDB.ca7a20e2ae73ae6221be.webp",
     "index.html": "/portfolio-2023/index.html",
+    "static/media/NextJs.webp": "/portfolio-2023/static/media/NextJs.7c4251fc9b207c9a9b42.webp",
     "static/media/Css.webp": "/portfolio-2023/static/media/Css.37c61c401ecc52fcfd26.webp",
     "static/media/HTML.webp": "/portfolio-2023/static/media/HTML.a79fb9b9652febbbc212.webp",
     "static/media/english.webp": "/portfolio-2023/static/media/english.ebbbd029368414139851.webp",
@@ -38,10 +41,10 @@
     "static/media/dark-dark.webp": "/portfolio-2023/static/media/dark-dark.bf5dd081e4fea703ae95.webp",
     "static/media/french.webp": "/portfolio-2023/static/media/french.499f0828d28e797dd30d.webp",
     "main.efaaa964.css.map": "/portfolio-2023/static/css/main.efaaa964.css.map",
-    "main.ba8a1b8d.js.map": "/portfolio-2023/static/js/main.ba8a1b8d.js.map"
+    "main.6ede303a.js.map": "/portfolio-2023/static/js/main.6ede303a.js.map"
   },
   "entrypoints": [
     "static/css/main.efaaa964.css",
-    "static/js/main.ba8a1b8d.js"
+    "static/js/main.6ede303a.js"
   ]
 }
